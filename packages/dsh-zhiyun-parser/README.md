@@ -76,4 +76,4 @@ export async function apply(ctx) {
 
 `parseClassroom` 默认要求课件和字幕均确认收全；可显式传 `allowPartialSource: true` 调试未完成数据，结果仍标记部分完成。截图过滤是结果上的 gate 元数据，不丢弃其对应字幕。逐页失败不会抹掉其他页的有效结果。
 
-验证命令：`npm run test:parser`、`npm run parser:verify`、`npm run parser:parity`。最后一个需要相邻 Flutter 仓库和 Dart SDK，仅运行纯 Dart 契约导出，不运行 Flutter 全量测试。验证范围与限制见 [迁移记录](../../docs/parser-migration.md)。
+验证命令：`npm run test:parser`、`npm run parser:verify`、`npm run parser:parity`。最后一个需要相邻 Flutter 仓库和 Dart SDK，仅运行纯 Dart 契约导出，不运行 Flutter 全量测试。验证范围与限制见 [迁移记录](../../docs/archive/parser-migration.md)。

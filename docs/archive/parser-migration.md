@@ -54,7 +54,7 @@ App 在未收敛时也把这一页的原始回包写进段缓存（「只付一�
 
 2026-10-07 第二轮（逐项对齐后）复验：JS 全套 **54 项通过**、0 失败、0 跳过，其中解析器 17 项（新增主线清洗、未落页字幕、分卷并发补发三项）。`parser:parity` 与 `classroom:parity` 通过，且连跑 6 次稳定（此前会偶发失败）。`parser:verify` 两版各 4 次请求、第二次全部命中缓存、状态 `ready`。两个支持版本的浏览器验收：通用回归各 13 项、学习面板各 8 项，全部通过。
 
-随后已通过独立的学习面板插件接入，见 [接入记录](study-integration.md)。该插件当时叫 `dsh-zhiyun-study`，界面拆分后已按职责分为领域状态层 `dsh-zhiyun-study-core` 与页面包 `dsh-zhiyun-page-{today,courses,study,me}`（见 [依赖图](dependency-graph.html)）。知识入库、PPT 层级树、讲义润色（习坎）、讲义终审 agent（无曰）、测验和通知属于后续阶段；加速档位、沙盒池、词表持久化与解析产物检索仍未迁移（差异清单见 `docs/` 同目录的对照记录）。
+随后已通过独立的学习面板插件接入，见 [接入记录](study-integration.md)。该插件当时叫 `dsh-zhiyun-study`，界面拆分后已按职责分为领域状态层 `dsh-zhiyun-study-core` 与页面包 `dsh-zhiyun-page-{today,courses,study,me}`（见 [依赖图](../dependency-graph.html)）。知识入库、PPT 层级树、讲义润色（习坎）、讲义终审 agent（无曰）、测验和通知属于后续阶段；加速档位、沙盒池、词表持久化与解析产物检索仍未迁移（差异清单见 `docs/` 同目录的对照记录）。
 
 ## 第二轮：多智能体并行迁移（2026-10-07）
 

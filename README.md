@@ -6,7 +6,7 @@ Pro 标记沿用官网的圆角板面与支脚轮廓，板内写 Pro，侧面搭
 
 界面按**职责**拆成包，而不是一个大插件：外壳只声明页框架与插槽、不认识任何具体页面；共享的 UI 原语（图标、品牌标记、空态、样式挂载）单独一个无状态包；账号、课程树、解析编排这些**跨页共用的领域状态**只有一份，装在领域包里、经 Cordis 服务交给页面；每个页面一个包，谁改哪一页一眼可见。依赖方向单向：页面包 → 领域包 / 原语包，外壳不依赖任何页面。
 
-已建立 profile、界面外壳、共享原语、领域状态层、独立智云课堂数据源 `dsh-zhiyun-classroom`、三阶段解析器 `dsh-zhiyun-parser`。个人账号登录、我的课、节次选择、PPT/字幕、解析进度与取消、结果阅读和筛选已接入页面；解析直接使用 DSH 的 LLM 与附件服务。笔记、复习、计划、知识入库和服务器同步仍在后续阶段，页面明确显示未接入说明。没有引入 `zju-mcp` 的知识库或融合解析实现。参见 [学习面板接入](docs/study-integration.md)、[数据源用法](packages/dsh-zhiyun-classroom/README.md) 和 [解析器用法](packages/dsh-zhiyun-parser/README.md)。
+已建立 profile、界面外壳、共享原语、领域状态层、独立智云课堂数据源 `dsh-zhiyun-classroom`、三阶段解析器 `dsh-zhiyun-parser`。个人账号登录、我的课、节次选择、PPT/字幕、解析进度与取消、结果阅读和筛选已接入页面；解析直接使用 DSH 的 LLM 与附件服务。笔记、复习、计划、知识入库和服务器同步仍在后续阶段，页面明确显示未接入说明。没有引入 `zju-mcp` 的知识库或融合解析实现。参见 [学习面板接入](docs/archive/study-integration.md)、[数据源用法](packages/dsh-zhiyun-classroom/README.md) 和 [解析器用法](packages/dsh-zhiyun-parser/README.md)。
 
 ## 启动
 
