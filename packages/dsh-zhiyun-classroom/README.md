@@ -60,4 +60,4 @@ npm run classroom:parity
 
 `classroom:parity` 需 Dart SDK 和相邻 Flutter 仓库，可用 `--flutter-root` 指定；Windows 可用 `DART_EXECUTABLE` 指向 dart.exe。普通 Node 测试使用已记录的 Dart 脱敏基线，无需 Dart。`--capture-live` 使用已有验证会话，按字段白名单生成脱敏接口样本及 Dart 基线，不能作为日常测试自动执行。
 
-2026-10-07 已通过新登录、会话恢复、30 门课程、两节内容、本周/空日课表、资源 Range 和本地注销验证。缺失课件/视频等可选资源及异常分页使用离线测试；未覆盖所有课程和所有服务端状态。完整证据见仓库 `docs/classroom-data-source-verification.md`。
+2026-10-07 已通过新登录、会话恢复、30 门课程、两节内容、本周/空日课表、资源 Range 和本地注销验证。缺失课件/视频等可选资源及异常分页使用离线测试；未覆盖所有课程和所有服务端状态。完整证据见仓库 `docs/archive/classroom-data-source-verification.md`。
