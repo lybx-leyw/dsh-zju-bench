@@ -1,0 +1,7 @@
+{
+  "name": "zhiyun-test-course-panel",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./index.js", "./client": "./client.js", "./package.json": "./package.json" },
+  "dsh": { "client": { "platform": "web", "inject": ["dsh-zhiyun-shell"] } }
+}

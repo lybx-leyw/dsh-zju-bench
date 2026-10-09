@@ -1,0 +1,3 @@
+- insert:
+    - id: zhiyun-parser
+      name: dsh-zhiyun-parser

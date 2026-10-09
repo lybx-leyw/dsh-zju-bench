@@ -1,0 +1,7 @@
+{
+  "name": "dsh-zhiyun-parser", "version": "0.1.0", "private": true, "type": "module",
+  "description": "智云 App 三阶段解析器，使用 DSH LLM 与附件服务",
+  "exports": { ".": "./src/index.js", "./parser": "./src/parser.js", "./vocabulary": "./src/vocabulary.js", "./accel": "./src/accel.js", "./package.json": "./package.json" },
+  "dependencies": { "sharp": "0.35.5" },
+  "main": "./src/index.js", "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

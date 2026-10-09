@@ -1,0 +1,19 @@
+{
+  "name": "dsh-zhiyun-quiz",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "智云 Pro 出题与质检：题形状 + 先筛后出 + 三态硬检查（零 UI、零落盘，llm 由集成层注入）",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./model": "./src/model.js",
+    "./generate": "./src/generate.js",
+    "./quality": "./src/quality.js",
+    "./dedupe": "./src/dedupe.js",
+    "./lecture": "./src/lecture.js",
+    "./store": "./src/store.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

@@ -1,0 +1,8 @@
+{
+  "hostVersions": ["0.2.0-rc.2", "0.2.1-alpha.1"],
+  "preferredHostVersion": "0.2.0-rc.2",
+  "cordisMajor": 4,
+  "profile": "zhiyun-bench",
+  "referenceCommit": "5badb15009ae1756c3afe0ae0cef1faafc290ccc",
+  "note": "Reference HEAD is for research only. Runtime compatibility is tested against an installed release, not HEAD. Every version listed in hostVersions must pass scripts/test-host.mjs before it is added."
+}

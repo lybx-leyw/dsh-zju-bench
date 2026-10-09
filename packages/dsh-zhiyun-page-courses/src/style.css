@@ -1,0 +1,95 @@
+/* packages/dsh-zhiyun-page-courses/src/style.css
+ *
+ * 由 packages/dsh-zhiyun-study/src/style.css 按「哪个包真的用到这个类」机械切分而来，
+ * 规则文本逐字未改（顺序保持原文件中的相对顺序）。.zy-* 与宿主外观无关的
+ * 公共类留在壳，领域状态的样式跟着各自的包走。
+ */
+
+body[data-zhiyun] .zs-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+body[data-zhiyun] .zs-heading h1 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 4px 0;
+}
+body[data-zhiyun] .zs-heading p {
+  font-size: 12px;
+  margin: 0;
+}
+body[data-zhiyun] .zs-empty {
+  padding: 54px 20px;
+  text-align: center;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-empty-title {
+  font-size: 19px;
+  color: var(--zy-text);
+}
+body[data-zhiyun] .zs-empty p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+body[data-zhiyun] .zs-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin: 18px 0;
+}
+body[data-zhiyun] .zs-search input {
+  width: 280px;
+  max-width: 75%;
+}
+body[data-zhiyun] .zs-course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+body[data-zhiyun] .zs-course {
+  padding: 22px;
+  background: var(--zy-surface);
+  border: 1px solid var(--zy-line);
+  border-radius: 8px;
+  text-align: left;
+  color: var(--zy-text);
+}
+body[data-zhiyun] .zs-course:hover {
+  border-color: var(--zy-accent);
+}
+body[data-zhiyun] .zs-course-code {
+  font-size: 10px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-course h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 12px 0 6px;
+}
+body[data-zhiyun] .zs-course p {
+  font-size: 12px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-course footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 11px;
+  color: var(--zy-accent);
+}
+/* 这两条原本住在 ui-primitives 的 <style> 里，但它们的基规则是本包上方的 .zs-heading。
+   两张表同特异性、按挂载顺序决胜：primitives 的 inject 为空、最先挂，本包等
+   zhiyunStudyController 才挂、排在后 —— 留在那边必输，覆盖永远不生效。跟着基规则搬来本包。 */
+@media (max-width: 760px) {
+  body[data-zhiyun] .zs-heading h1 {
+    font-size: 23px;
+  }
+  body[data-zhiyun] .zs-heading {
+    margin-bottom: 18px;
+  }
+}

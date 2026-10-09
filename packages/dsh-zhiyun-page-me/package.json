@@ -1,0 +1,13 @@
+{
+  "name": "dsh-zhiyun-page-me",
+  "version": "0.1.0",
+  "description": "智云 Pro「个人」页：账号、空间信息与偏好设置（页面插件）",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "external": ["dsh-zhiyun-ui-primitives"] }
+  }
+}

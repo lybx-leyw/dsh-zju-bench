@@ -1,0 +1,23 @@
+{
+  "name": "dsh-zhiyun-knowledge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "智云 Pro 知识入库与检索：解析产物按「账号 + 课程 + 节次」落进宿主 storage-domain，支持按课程列取与字面检索（零 UI、零自建落盘）",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./domain": "./src/domain.js",
+    "./service": "./src/service.js",
+    "./host": "./src/host.js",
+    "./errors": "./src/errors.js",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-storage-domain": "0.2.0-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-storage-domain": { "optional": true }
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

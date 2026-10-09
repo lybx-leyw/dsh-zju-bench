@@ -1,0 +1,13 @@
+{
+  "name": "dsh-zhiyun-page-study",
+  "version": "0.1.0",
+  "description": "智云 Pro「学习」页：课程树、讲义阅读、分层检索与习题（页面插件）",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "external": ["dsh-zhiyun-ui-primitives"] }
+  }
+}

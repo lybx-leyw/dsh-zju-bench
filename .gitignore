@@ -1,0 +1,12 @@
+node_modules/
+.ref/
+.ref-codex-ui/
+.runtime/
+artifacts/
+.backup/
+.verify-scratch/
+*.log
+.env
+.temp_env
+*.dpapi
+packages/*/lib/

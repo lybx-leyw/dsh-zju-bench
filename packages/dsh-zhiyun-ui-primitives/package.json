@@ -1,0 +1,13 @@
+{
+  "name": "dsh-zhiyun-ui-primitives",
+  "version": "0.1.0",
+  "description": "智云 Pro 共享 UI 原语：图标、品牌标记、空态、分区标题与样式挂载（无状态，全产品共用）",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dsh-zhiyun-lecture",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "智云 Pro 讲义装配：PPT 知识树 + 习坎填充 + 书面语验收（零宿主依赖，llm 由集成层注入）",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./tree": "./src/tree.js",
+    "./register": "./src/register.js",
+    "./polish": "./src/polish.js",
+    "./agent-text": "./src/agent-text.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

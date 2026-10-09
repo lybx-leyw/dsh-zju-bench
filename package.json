@@ -1,0 +1,39 @@
+{
+  "name": "zhiyun-pro-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "profile:init": "node scripts/profile.mjs init",
+    "profile:check": "node scripts/profile.mjs check",
+    "profile:dump": "node scripts/profile.mjs dump",
+    "start": "node scripts/profile.mjs start",
+    "dev": "npm run build && npm start",
+    "test": "node --test tests/*.test.mjs",
+    "check:css": "node scripts/check-css-order.mjs",
+    "test:classroom": "node --test tests/classroom*.test.mjs",
+    "test:parser": "node --test tests/parser.test.mjs tests/parser-collage.test.mjs tests/parser-correction.test.mjs",
+    "test:study": "node --test tests/study.test.mjs",
+    "test:study-host": "node scripts/test-study-host.mjs",
+    "parser:verify": "node scripts/parser-verify.mjs",
+    "parser:parity": "node scripts/parser-reference.mjs",
+    "classroom:verify": "node scripts/classroom-verify.mjs",
+    "classroom:parity": "node scripts/classroom-parity.mjs",
+    "test:host": "node scripts/test-host.mjs"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-atomic-write": "^0.2.0-rc.2",
+    "esbuild": "0.25.12",
+    "js-yaml": "4.1.0",
+    "playwright": "1.56.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

@@ -1,0 +1,282 @@
+/* packages/dsh-zhiyun-ui-primitives/src/style.css
+ *
+ * 由 packages/dsh-zhiyun-study/src/style.css 按「哪个包真的用到这个类」机械切分而来，
+ * 规则文本逐字未改（顺序保持原文件中的相对顺序）。.zy-* 与宿主外观无关的
+ * 公共类留在壳，领域状态的样式跟着各自的包走。
+ */
+
+body[data-zhiyun] .zs-lecture-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--zy-line);
+  border-radius: 10px;
+  background: var(--zy-surface);
+}
+body[data-zhiyun] .zs-lecture-bar .zs-muted {
+  font-size: 11px;
+}
+body[data-zhiyun] .zs-final {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--zy-line);
+  border-radius: 10px;
+  background: var(--zy-soft);
+}
+body[data-zhiyun] .zs-final small {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-final pre {
+  margin: 0;
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font: inherit;
+  line-height: 1.8;
+}
+body[data-zhiyun] .zs-heading p,
+body[data-zhiyun] .zs-heading small,
+body[data-zhiyun] .zs-muted {
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-study button,
+body[data-zhiyun] .zs-courses button,
+body[data-zhiyun] .zs-account button {
+  font: inherit;
+  cursor: pointer;
+}
+body[data-zhiyun] .zs-button,
+body[data-zhiyun] .zs-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--zy-line);
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 12px !important;
+  text-decoration: none;
+  color: var(--zy-text);
+  background: var(--zy-surface);
+}
+body[data-zhiyun] .zs-primary {
+  background: var(--zy-action);
+  border-color: var(--zy-action);
+  color: white;
+}
+body[data-zhiyun] .zs-button:hover {
+  background: var(--zy-hover);
+}
+body[data-zhiyun] .zs-primary:hover {
+  background: var(--zy-action-hover);
+}
+body[data-zhiyun] .zs-study button:disabled,
+body[data-zhiyun] .zs-account button:disabled,
+body[data-zhiyun] .zs-courses button:disabled {
+  opacity: .45;
+  cursor: default;
+}
+body[data-zhiyun] .zs-notice {
+  padding: 10px 13px;
+  border-left: 2px solid var(--zy-accent);
+  background: var(--zy-soft);
+  margin: 12px 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+body[data-zhiyun] .zs-motto {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body[data-zhiyun] .zs-motto > span {
+  font-family:
+    "Songti SC",
+    "SimSun",
+    serif;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+body[data-zhiyun] .zs-account label,
+body[data-zhiyun] .zs-sections label,
+body[data-zhiyun] .zs-models label {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  gap: 7px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-account input,
+body[data-zhiyun] .zs-study select,
+body[data-zhiyun] .zs-study input,
+body[data-zhiyun] .zs-search input {
+  background: var(--zy-surface);
+  color: var(--zy-text);
+  font: inherit;
+  min-width: 0;
+  border: 1px solid var(--zy-line);
+  padding: 8px 9px;
+  border-radius: 5px;
+}
+body[data-zhiyun] .zs-account input:focus-visible,
+body[data-zhiyun] .zs-study input:focus-visible,
+body[data-zhiyun] .zs-study select:focus-visible {
+  outline: 2px solid var(--zy-accent);
+  outline-offset: 2px;
+}
+body[data-zhiyun] .zs-sections {
+  padding: 16px 14px;
+  border: 1px solid var(--zy-line);
+  border-radius: 8px;
+  background: var(--zy-surface);
+}
+body[data-zhiyun] .zs-list-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--zy-muted);
+  padding: 22px 7px 10px;
+}
+body[data-zhiyun] .zs-lesson {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  width: 100%;
+  text-align: left;
+  padding: 10px 8px;
+  color: var(--zy-text);
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+}
+body[data-zhiyun] .zs-lesson:hover {
+  background: var(--zy-hover);
+}
+body[data-zhiyun] .zs-lesson.is-selected {
+  background: var(--zy-soft);
+  color: var(--zy-accent);
+}
+body[data-zhiyun] .zs-lesson-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--zy-muted);
+  border-radius: 50%;
+  flex: none;
+}
+body[data-zhiyun] .zs-lesson.is-selected .zs-lesson-dot {
+  background: var(--zy-accent);
+}
+body[data-zhiyun] .zs-lesson strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+}
+body[data-zhiyun] .zs-lesson small {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0 20px;
+  border-bottom: 1px solid var(--zy-line);
+}
+body[data-zhiyun] .zs-section-head h2 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 6px 0;
+}
+body[data-zhiyun] .zs-section-head small,
+body[data-zhiyun] .zs-status {
+  font-size: 11px;
+  color: var(--zy-secondary);
+}
+body[data-zhiyun] .zs-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+body[data-zhiyun] .zs-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid var(--zy-line);
+  margin-bottom: 22px;
+}
+body[data-zhiyun] .zs-tabs button {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--zy-secondary);
+  padding: 12px 1px;
+  font-size: 12px;
+}
+body[data-zhiyun] .zs-tabs button[aria-selected=true] {
+  border-color: var(--zy-accent);
+  color: var(--zy-accent);
+}
+body[data-zhiyun] .zs-models .zs-notice { font-size:10px; }
+body[data-zhiyun] .zs-reader > .zs-notice:first-child:empty { display:none; }
+body[data-zhiyun] .zs-current-actions .zs-button,body[data-zhiyun] .zs-current-actions .zs-primary { min-height:35px; padding:8px 12px; font-size:10px!important; }
+/* 响应式覆盖必须和「它要覆盖的基规则」待在同一个包里。
+ *
+ * 这些 @media 曾经整块住在原 dsh-zhiyun-study 的 style.css 尾部，靠文档顺序压过前面的基规则。
+ * 拆包后基规则跟着组件去了各页面包，而每个包的 style.css 是各自 mountStyle 追加的
+ * 独立 <style>：本包 inject 为空、激活最早，表永远排在最前，同特异性的规则必输给页面包。
+ * 于是只要基规则不在本包，写在这里的覆盖就是死规则（曾真实回归：≤760 时 .zs-heading
+ * 仍是 24px/26px 而不是 18px/23px）。
+ *
+ * 所以这里只留「基规则也在本包」或「与任何基规则无属性冲突」的覆盖：
+ *   .zs-section-head / .zs-sections / .zs-lesson / .zs-motto / .zs-tabs / .zs-account label 的基规则在本包；
+ *   .zs-section-head .zs-actions{justify-content} 只添加属性、无冲突。
+ * 覆盖页面组件的 .zs-workbench / .zs-heading / .zs-account form / .zs-models / .zs-progress 已分别搬到
+ * dsh-zhiyun-page-study、page-courses、page-me 自己的 style.css。
+ */
+@media (max-width: 1050px) {
+  body[data-zhiyun] .zs-section-head {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  body[data-zhiyun] .zs-sections {
+    padding: 12px;
+  }
+  body[data-zhiyun] .zs-lesson {
+    padding: 8px;
+  }
+  body[data-zhiyun] .zs-motto {
+    min-height: 160px;
+  }
+  body[data-zhiyun] .zs-tabs {
+    gap: 18px;
+  }
+  body[data-zhiyun] .zs-account label {
+    flex: 1;
+    min-width: 160px;
+  }
+  body[data-zhiyun] .zs-section-head .zs-actions {
+    justify-content: start;
+  }
+}
+body[data-zhiyun] .zs-handout-toc { display:flex; flex-wrap:wrap; gap:10px 22px; padding:20px 0; }
+body[data-zhiyun] .zs-handout-block--explain { border-left-color:#4d8edb; background:#f4f8fd; }
+body[data-zhiyun] .zs-handout-block--definition { border-left-color:#8a6bd1; background:#f8f5fd; }
+body[data-zhiyun] .zs-handout-block--procedure { border-left-color:#2f9b86; background:#f2faf7; }
+body[data-zhiyun] .zs-handout-block--example { border-left-color:#e59b3b; background:#fff8ed; }
+body[data-zhiyun] .zs-handout-block--note { border-left-color:#8a96a8; background:#f6f8fa; }
+body[data-zhiyun][data-ds-dark-theme] .zs-handout-block--explain { background:color-mix(in srgb,#4d8edb 10%,var(--zy-surface)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-handout-block--definition { background:color-mix(in srgb,#8a6bd1 10%,var(--zy-surface)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-handout-block--procedure { background:color-mix(in srgb,#2f9b86 10%,var(--zy-surface)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-handout-block--example { background:color-mix(in srgb,#e59b3b 10%,var(--zy-surface)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-handout-block--note { background:color-mix(in srgb,#8a96a8 10%,var(--zy-surface)); }

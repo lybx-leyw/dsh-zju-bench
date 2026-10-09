@@ -1,0 +1,16 @@
+{
+  "name": "dsh-zhiyun-study-core",
+  "version": "0.1.0",
+  "description": "智云 Pro 领域状态层：学习空间、学习控制器与 /api/zhiyun-study 后端（多页共用的唯一真源）",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "inject": ["@deepseek-ai/dsh-client-connection"] }
+  },
+  "dependencies": { "dsh-zhiyun-lecture": "0.1.0" },
+  "peerDependencies": { "@deepseek-ai/dsh-atomic-write": "0.2.0-rc.2" },
+  "peerDependenciesMeta": { "@deepseek-ai/dsh-atomic-write": { "optional": true } }
+}

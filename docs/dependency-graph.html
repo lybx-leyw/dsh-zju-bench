@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>zhiyun-pro-js · 插件依赖图</title>
+<style>
+  :root{
+    --bg:#eef2f7; --panel:#ffffff; --ink:#0f172a; --muted:#64748b; --faint:#94a3b8;
+    --line:#d7dee9; --hard:#2563eb; --lazy:#d97706; --import:#0891b2; --host:#94a3b8;
+    --shadow:0 1px 2px rgba(15,23,42,.06),0 14px 36px -14px rgba(15,23,42,.22);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0b1220; --panel:#111a2b; --ink:#e6edf7; --muted:#93a4bd; --faint:#5c6b84;
+      --line:#233149; --hard:#5b9dff; --lazy:#e5a13f; --import:#22c7e0; --host:#5c6b84;
+      --shadow:0 1px 2px rgba(0,0,0,.45),0 18px 44px -18px rgba(0,0,0,.75);
+    }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,system-ui,"Segoe UI","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; align-items:center; justify-content:center; padding:28px 20px;
+  }
+  .board{
+    width:100%; max-width:1500px; background:var(--panel); border:1px solid var(--line);
+    border-radius:22px; box-shadow:var(--shadow); padding:14px 18px; overflow-x:auto;
+  }
+  svg{display:block; width:100%; min-width:1180px; height:auto}
+
+  .colhead{font:600 10px ui-sans-serif,system-ui,"Microsoft YaHei",sans-serif;
+    fill:var(--faint); letter-spacing:.22em}
+  .colrule{stroke:var(--line);stroke-width:1;stroke-dasharray:3 7}
+
+  .card{fill:var(--panel);stroke:var(--line);stroke-width:1.4;filter:url(#soft)}
+  .pkg{font:600 11.5px ui-monospace,"Cascadia Code",Consolas,monospace;fill:var(--ink)}
+  .role{font:400 10.5px ui-sans-serif,system-ui,"Microsoft YaHei",sans-serif;fill:var(--muted)}
+  .iface{font:400 10px ui-monospace,"Cascadia Code",Consolas,monospace;fill:var(--faint)}
+  .core .pkg{font-size:13px}
+  .core .iface{font-size:10.5px;fill:var(--muted)}
+  .core .role{font-size:11.5px}
+  .dot{stroke:none}
+  .divider{stroke:var(--line);stroke-width:1}
+
+  .hostbox{fill:var(--panel);stroke:var(--host);stroke-width:1.6;stroke-dasharray:7 5;filter:url(#soft)}
+  .hostname{font:700 17px ui-sans-serif,system-ui,"Microsoft YaHei",sans-serif;fill:var(--ink)}
+  .hostsub{font:400 10px ui-monospace,Consolas,monospace;fill:var(--faint);letter-spacing:.08em}
+
+  .shellbox{fill:var(--panel);stroke:var(--import);stroke-width:1.6;stroke-dasharray:7 5;filter:url(#soft)}
+  .shellname{font:700 13px ui-monospace,"Cascadia Code",Consolas,monospace;fill:var(--ink)}
+  .shellrole{font:400 11.5px ui-sans-serif,system-ui,"Microsoft YaHei",sans-serif;fill:var(--muted)}
+
+  .edge{fill:none;stroke-linejoin:round;stroke-linecap:round;transition:opacity .15s ease}
+  .edge.hard{stroke:var(--hard);stroke-width:2}
+  .edge.lazy{stroke:var(--lazy);stroke-width:2;stroke-dasharray:7 6}
+  .edge.import{stroke:var(--import);stroke-width:2;stroke-dasharray:1.5 6}
+  .edge.host{stroke:var(--host);stroke-width:1.7;opacity:.9}
+  .edge.dimmed{opacity:.10}
+  .edge.hot{stroke-width:3.4;filter:url(#glow)}
+
+  .legendbox{fill:var(--panel);stroke:var(--line);stroke-width:1.2}
+  .legendtext{font:400 10px ui-monospace,Consolas,monospace;fill:var(--muted)}
+  .legendcap{font:600 9.5px ui-sans-serif,system-ui,"Microsoft YaHei",sans-serif;
+    fill:var(--faint);letter-spacing:.2em}
+
+  .node{cursor:pointer}
+  .node.dimmed{opacity:.25}
+  .node.rel .card,.node.rel .hostbox,.node.rel .shellbox{stroke-width:2.2}
+  .node.hot .card,.node.hot .hostbox,.node.hot .shellbox{stroke-width:2.8}
+</style>
+</head>
+<body>
+<div class="board">
+<svg viewBox="0 0 1420 780" role="img" aria-label="zhiyun-pro-js 插件依赖图：宿主、能力包、加工包、领域状态与共享原语、界面外壳与页面包">
+  <defs>
+    <filter id="soft" x="-20%" y="-30%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity=".10"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-80%" width="180%" height="260%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#2563eb" flood-opacity=".5"/>
+    </filter>
+    <marker id="a-hard" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--hard)"/></marker>
+    <marker id="a-lazy" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--lazy)"/></marker>
+    <marker id="a-import" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--import)"/></marker>
+    <marker id="a-host" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="6.2" markerHeight="6.2" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--host)"/></marker>
+  </defs>
+
+  <!-- ── 列 ── -->
+  <g>
+    <text class="colhead" x="115" y="34" text-anchor="middle">宿主</text>
+    <text class="colhead" x="350" y="34" text-anchor="middle">能力包</text>
+    <text class="colhead" x="615" y="34" text-anchor="middle">加工包</text>
+    <text class="colhead" x="895" y="34" text-anchor="middle">领域状态 · 共享原语</text>
+    <text class="colhead" x="1245" y="34" text-anchor="middle">界面外壳 · 页面包</text>
+    <line class="colrule" x1="215" y1="78" x2="215" y2="726"/>
+    <line class="colrule" x1="478" y1="78" x2="478" y2="726"/>
+    <line class="colrule" x1="745" y1="78" x2="745" y2="726"/>
+    <line class="colrule" x1="1048" y1="78" x2="1048" y2="726"/>
+  </g>
+
+  <!-- ── 边：方向 = 依赖方向（左提供 → 右使用） ── -->
+  <g id="edges">
+    <!-- 宿主能力 -->
+    <path class="edge host" data-from="host" data-to="classroom" marker-end="url(#a-host)" d="M190,330 C222,330 222,143 250,143"/>
+    <path class="edge host" data-from="host" data-to="parser" marker-end="url(#a-host)" d="M190,350 C222,350 222,258 250,258"/>
+    <path class="edge host" data-from="host" data-to="knowledge" marker-end="url(#a-host)" d="M190,390 C222,390 222,373 250,373"/>
+    <path class="edge host" data-from="host" data-to="final-pass" marker-end="url(#a-host)" d="M190,440 C222,440 222,488 250,488"/>
+    <path class="edge host" data-from="host" data-to="notes" marker-end="url(#a-host)" d="M190,455 H212 V580 H500 V503 H515"/>
+    <path class="edge host" data-from="host" data-to="study-core" marker-end="url(#a-host)" d="M190,300 H790"/>
+    <path class="edge host" data-from="host" data-to="shell" marker-end="url(#a-host)" d="M115,300 V68 H1085 V100"/>
+
+    <!-- 能力 → 加工 -->
+    <path class="edge hard" data-from="parser" data-to="lecture" marker-end="url(#a-hard)" d="M450,230 H498 V213 H515"/>
+    <path class="edge hard" data-from="parser" data-to="quiz" marker-end="url(#a-hard)" d="M450,284 H503 V343 H515"/>
+    <path class="edge hard" data-from="knowledge" data-to="notes" marker-end="url(#a-hard)" d="M450,395 H490 V503 H515"/>
+
+    <!-- 能力 → 领域状态 -->
+    <path class="edge hard" data-from="classroom" data-to="study-core" marker-end="url(#a-hard)" d="M450,150 H510 V258 H790"/>
+    <path class="edge hard" data-from="parser" data-to="study-core" marker-end="url(#a-hard)" d="M450,272 H790"/>
+    <path class="edge hard" data-from="knowledge" data-to="study-core" marker-end="url(#a-hard)" d="M450,388 H480 V286 H790"/>
+    <path class="edge lazy" data-from="final-pass" data-to="study-core" marker-end="url(#a-lazy)" d="M450,488 H500 V452 H790"/>
+
+    <!-- 加工 → 领域状态：静态 import（agent-text 子路径） -->
+    <path class="edge import" data-from="lecture" data-to="study-core" marker-end="url(#a-import)" d="M715,196 H780 V244 H790"/>
+
+    <!-- 领域状态 → 外壳 -->
+    <path class="edge lazy" data-from="study-core" data-to="shell" marker-end="url(#a-lazy)" d="M1000,318 H1040 V196 H1100"/>
+    <path class="edge hard" data-from="study-core" data-to="page-courses" marker-end="url(#a-hard)" d="M1000,430 H1055 V414 H1116"/>
+    <path class="edge hard" data-from="study-core" data-to="page-study" marker-end="url(#a-hard)" d="M1055,414 V532 H1116"/>
+    <path class="edge hard" data-from="study-core" data-to="page-me" marker-end="url(#a-hard)" d="M1055,532 V650 H1116"/>
+
+    <!-- 共享原语 → 外壳与页面：静态 import -->
+    <path class="edge import" data-from="ui-primitives" data-to="shell" marker-end="url(#a-import)" d="M1000,150 H1100"/>
+    <path class="edge import" data-from="ui-primitives" data-to="page-today" marker-end="url(#a-import)" d="M1000,170 H1020 V240 H1116"/>
+    <path class="edge import" data-from="ui-primitives" data-to="page-courses" marker-end="url(#a-import)" d="M1020,240 V358 H1116"/>
+    <path class="edge import" data-from="ui-primitives" data-to="page-study" marker-end="url(#a-import)" d="M1020,358 V476 H1116"/>
+    <path class="edge import" data-from="ui-primitives" data-to="page-me" marker-end="url(#a-import)" d="M1020,476 V594 H1116"/>
+  </g>
+
+  <!-- ── 宿主 ── -->
+  <g class="node" data-id="host">
+    <rect class="hostbox" x="40" y="300" width="150" height="190" rx="18"/>
+    <text class="hostname" x="115" y="385" text-anchor="middle">宿主</text>
+    <text class="hostsub" x="115" y="408" text-anchor="middle">DSH runtime</text>
+  </g>
+
+  <!-- ── 界面外壳（页面挂在这里） ── -->
+  <g class="node" data-id="shell">
+    <rect class="shellbox" x="1100" y="100" width="290" height="594" rx="20"/>
+    <text class="shellname" x="1120" y="136">dsh-zhiyun-shell</text>
+    <text class="shellrole" x="1120" y="158">界面外壳 · 插槽契约 · 主题覆盖</text>
+    <text class="iface" x="1120" y="180">provide zhiyunNavigation</text>
+    <text class="iface" x="1120" y="196">inject slots · layout · theme</text>
+    <line class="divider" x1="1120" y1="210" x2="1370" y2="210"/>
+  </g>
+
+  <!-- ── 能力包 ── -->
+  <g class="node" data-id="classroom">
+    <rect class="card" x="250" y="110" width="200" height="66" rx="13"/>
+    <rect x="250" y="120" width="4" height="46" rx="2" fill="#2563eb"/>
+    <circle class="dot" cx="270" cy="132" r="4" fill="#2563eb"/>
+    <text class="pkg" x="282" y="137">dsh-zhiyun-classroom</text>
+    <text class="role" x="264" y="159">课堂接入</text>
+    <text class="iface" x="264" y="174">provide zhiyunClassroom</text>
+  </g>
+
+  <g class="node" data-id="parser">
+    <rect class="card" x="250" y="225" width="200" height="66" rx="13"/>
+    <rect x="250" y="235" width="4" height="46" rx="2" fill="#2563eb"/>
+    <circle class="dot" cx="270" cy="247" r="4" fill="#2563eb"/>
+    <text class="pkg" x="282" y="252">dsh-zhiyun-parser</text>
+    <text class="role" x="264" y="274">课件 · 字幕解析</text>
+    <text class="iface" x="264" y="289">provide zhiyunParser</text>
+  </g>
+
+  <g class="node" data-id="knowledge">
+    <rect class="card" x="250" y="340" width="200" height="66" rx="13"/>
+    <rect x="250" y="350" width="4" height="46" rx="2" fill="#059669"/>
+    <circle class="dot" cx="270" cy="362" r="4" fill="#059669"/>
+    <text class="pkg" x="282" y="367">dsh-zhiyun-knowledge</text>
+    <text class="role" x="264" y="389">知识库存储</text>
+    <text class="iface" x="264" y="404">provide zhiyunKnowledge</text>
+  </g>
+
+  <g class="node" data-id="final-pass">
+    <rect class="card" x="250" y="455" width="200" height="66" rx="13"/>
+    <rect x="250" y="465" width="4" height="46" rx="2" fill="#7c3aed"/>
+    <circle class="dot" cx="270" cy="477" r="4" fill="#7c3aed"/>
+    <text class="pkg" x="282" y="482">dsh-zhiyun-final-pass</text>
+    <text class="role" x="264" y="504">考前冲刺</text>
+    <text class="iface" x="264" y="519">provide zhiyunFinalPass</text>
+  </g>
+
+  <!-- ── 加工包 ── -->
+  <g class="node" data-id="lecture">
+    <rect class="card" x="515" y="180" width="200" height="66" rx="13"/>
+    <rect x="515" y="190" width="4" height="46" rx="2" fill="#7c3aed"/>
+    <circle class="dot" cx="535" cy="202" r="4" fill="#7c3aed"/>
+    <text class="pkg" x="547" y="207">dsh-zhiyun-lecture</text>
+    <text class="role" x="529" y="229">讲稿整理</text>
+    <text class="iface" x="529" y="244">provide zhiyunLecture</text>
+  </g>
+
+  <g class="node" data-id="quiz">
+    <rect class="card" x="515" y="310" width="200" height="66" rx="13"/>
+    <rect x="515" y="320" width="4" height="46" rx="2" fill="#7c3aed"/>
+    <circle class="dot" cx="535" cy="332" r="4" fill="#7c3aed"/>
+    <text class="pkg" x="547" y="337">dsh-zhiyun-quiz</text>
+    <text class="role" x="529" y="359">习题生成</text>
+    <text class="iface" x="529" y="374">provide zhiyunQuiz</text>
+  </g>
+
+  <g class="node" data-id="notes">
+    <rect class="card" x="515" y="470" width="200" height="66" rx="13"/>
+    <rect x="515" y="480" width="4" height="46" rx="2" fill="#059669"/>
+    <circle class="dot" cx="535" cy="492" r="4" fill="#059669"/>
+    <text class="pkg" x="547" y="497">dsh-zhiyun-notes</text>
+    <text class="role" x="529" y="519">笔记</text>
+    <text class="iface" x="529" y="534">provide zhiyunNotes</text>
+  </g>
+
+  <!-- ── 共享原语 ── -->
+  <g class="node" data-id="ui-primitives">
+    <rect class="card" x="790" y="120" width="210" height="66" rx="13"/>
+    <rect x="790" y="130" width="4" height="46" rx="2" fill="#0891b2"/>
+    <circle class="dot" cx="810" cy="142" r="4" fill="#0891b2"/>
+    <text class="pkg" x="822" y="147">dsh-zhiyun-ui-primitives</text>
+    <text class="role" x="804" y="169">共享 UI 原语 · 无状态</text>
+    <text class="iface" x="804" y="184">Icon · Mark · Empty · Notice</text>
+  </g>
+
+  <!-- ── 领域状态 ── -->
+  <g class="node core" data-id="study-core">
+    <rect class="card" x="790" y="236" width="210" height="254" rx="16" stroke="#ea580c" stroke-width="2"/>
+    <rect x="790" y="248" width="4" height="230" rx="2" fill="#ea580c"/>
+    <circle class="dot" cx="810" cy="260" r="4.5" fill="#ea580c"/>
+    <text class="pkg" x="822" y="265">dsh-zhiyun-study-core</text>
+    <text class="role" x="804" y="287">领域状态层 · 多页唯一真源</text>
+    <line class="divider" x1="804" y1="302" x2="986" y2="302"/>
+    <text class="iface" x="804" y="324">inject workspaceRegistry · llm</text>
+    <text class="iface" x="804" y="346">inject connection</text>
+    <text class="iface" x="804" y="372">provide zhiyunStudy</text>
+    <text class="iface" x="804" y="394">provide zhiyunStudyController</text>
+    <text class="iface" x="804" y="416">provide zhiyunLearningSpace</text>
+    <text class="iface" x="804" y="442">POST /api/zhiyun-study</text>
+    <text class="iface" x="804" y="468">惰性 lecture · finalPass</text>
+  </g>
+
+  <!-- ── 页面包 ── -->
+  <g class="node" data-id="page-today">
+    <rect class="card" x="1120" y="218" width="250" height="104" rx="13"/>
+    <rect x="1120" y="238" width="4" height="64" rx="2" fill="#0891b2"/>
+    <circle class="dot" cx="1140" cy="250" r="4" fill="#0891b2"/>
+    <text class="pkg" x="1152" y="255">dsh-zhiyun-page-today</text>
+    <text class="role" x="1134" y="277">「今天」页 · 日程与插空任务</text>
+    <text class="iface" x="1134" y="299">slot zhiyun.today.content</text>
+    <text class="iface" x="1134" y="313">无领域依赖 · 只用共享原语</text>
+  </g>
+
+  <g class="node" data-id="page-courses">
+    <rect class="card" x="1120" y="336" width="250" height="104" rx="13"/>
+    <rect x="1120" y="356" width="4" height="64" rx="2" fill="#0891b2"/>
+    <circle class="dot" cx="1140" cy="368" r="4" fill="#0891b2"/>
+    <text class="pkg" x="1152" y="373">dsh-zhiyun-page-courses</text>
+    <text class="role" x="1134" y="395">「我的课」页 · 课程网格与登录</text>
+    <text class="iface" x="1134" y="417">slot zhiyun.courses.content</text>
+    <text class="iface" x="1134" y="431">inject zhiyunStudyController</text>
+  </g>
+
+  <g class="node" data-id="page-study">
+    <rect class="card" x="1120" y="454" width="250" height="104" rx="13"/>
+    <rect x="1120" y="474" width="4" height="64" rx="2" fill="#0891b2"/>
+    <circle class="dot" cx="1140" cy="486" r="4" fill="#0891b2"/>
+    <text class="pkg" x="1152" y="491">dsh-zhiyun-page-study</text>
+    <text class="role" x="1134" y="513">「学习」页 · 树 · 讲义 · 检索</text>
+    <text class="iface" x="1134" y="535">slot zhiyun.study.content</text>
+    <text class="iface" x="1134" y="549">inject zhiyunStudyController</text>
+  </g>
+
+  <g class="node" data-id="page-me">
+    <rect class="card" x="1120" y="572" width="250" height="104" rx="13"/>
+    <rect x="1120" y="592" width="4" height="64" rx="2" fill="#0891b2"/>
+    <circle class="dot" cx="1140" cy="604" r="4" fill="#0891b2"/>
+    <text class="pkg" x="1152" y="609">dsh-zhiyun-page-me</text>
+    <text class="role" x="1134" y="631">「个人」页 · 账号与偏好设置</text>
+    <text class="iface" x="1134" y="653">slot zhiyun.me.content · account</text>
+    <text class="iface" x="1134" y="667">inject zhiyunStudyController</text>
+  </g>
+
+  <!-- ── 图例 ── -->
+  <g>
+    <rect class="legendbox" x="40" y="548" width="182" height="156" rx="13"/>
+    <text class="legendcap" x="58" y="570">图例</text>
+    <path class="edge host" stroke="var(--host)" stroke-width="1.7" d="M58,592 H96"/>
+    <text class="legendtext" x="106" y="596">宿主能力</text>
+    <path class="edge hard" stroke="var(--hard)" stroke-width="2" d="M58,616 H96"/>
+    <text class="legendtext" x="106" y="620">运行时服务依赖</text>
+    <path class="edge lazy" stroke="var(--lazy)" stroke-width="2" stroke-dasharray="7 6" d="M58,640 H96"/>
+    <text class="legendtext" x="106" y="644">惰性可选 ctx.get</text>
+    <path class="edge import" stroke="var(--import)" stroke-width="2" stroke-dasharray="1.5 6" d="M58,664 H96"/>
+    <text class="legendtext" x="106" y="668">静态 import</text>
+    <text class="legendcap" x="58" y="690">箭头 = 依赖方向</text>
+  </g>
+</svg>
+</div>
+
+<script>
+(function () {
+  const nodes = Array.from(document.querySelectorAll('g.node'));
+  const links = Array.from(document.querySelectorAll('path.edge'))
+    .map((el) => ({ el, from: el.dataset.from, to: el.dataset.to }));
+
+  const clear = () => {
+    nodes.forEach((n) => n.classList.remove('hot', 'rel', 'dimmed'));
+    links.forEach((l) => l.el.classList.remove('hot', 'dimmed'));
+  };
+
+  const focusOn = (id) => {
+    const related = new Set([id]);
+    links.forEach((l) => {
+      if (l.from === id) related.add(l.to);
+      if (l.to === id) related.add(l.from);
+    });
+    nodes.forEach((n) => {
+      const self = n.dataset.id === id;
+      n.classList.toggle('hot', self);
+      n.classList.toggle('rel', !self && related.has(n.dataset.id));
+      n.classList.toggle('dimmed', !related.has(n.dataset.id));
+    });
+    links.forEach((l) => {
+      const on = l.from === id || l.to === id;
+      l.el.classList.toggle('hot', on);
+      l.el.classList.toggle('dimmed', !on);
+    });
+  };
+
+  nodes.forEach((n) => {
+    n.addEventListener('mouseenter', () => focusOn(n.dataset.id));
+    n.addEventListener('mouseleave', clear);
+    n.addEventListener('focus', () => focusOn(n.dataset.id));
+    n.addEventListener('blur', clear);
+    n.setAttribute('tabindex', '0');
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "dsh-zhiyun-page-today",
+  "version": "0.1.0",
+  "description": "智云 Pro「今天」页：日程、插空任务与最近进度的落点（页面插件）",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "external": ["dsh-zhiyun-ui-primitives"] }
+  }
+}

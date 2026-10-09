@@ -1,0 +1,420 @@
+/* packages/dsh-zhiyun-page-study/src/style.css
+ *
+ * 由 packages/dsh-zhiyun-study/src/style.css 按「哪个包真的用到这个类」机械切分而来，
+ * 规则文本逐字未改（顺序保持原文件中的相对顺序）。.zy-* 与宿主外观无关的
+ * 公共类留在壳，领域状态的样式跟着各自的包走。
+ */
+
+body[data-zhiyun] .zs-text {
+  background: none;
+  border: 0;
+  color: var(--zy-accent);
+  padding: 4px 0;
+  text-align: left;
+}
+body[data-zhiyun] .zy-page[data-page=study] .zy-content {
+  max-width: 1400px;
+}
+body[data-zhiyun] .zs-workbench {
+  display: grid;
+  grid-template-columns: 248px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+body[data-zhiyun] .zs-reader {
+  min-width: 0;
+}
+body[data-zhiyun] .zs-progress {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--zy-accent);
+}
+body[data-zhiyun] .zs-progress progress {
+  min-width: 40px;
+  width: 100px;
+  accent-color: var(--zy-action);
+}
+body[data-zhiyun] .zs-progress button {
+  margin-left: auto;
+}
+body[data-zhiyun] .zs-outline {
+  border-left: 2px solid var(--zy-accent);
+  padding: 0 0 0 15px;
+  margin: 24px 0;
+}
+body[data-zhiyun] .zs-outline small {
+  font-size: 10px;
+  color: var(--zy-muted);
+}
+body[data-zhiyun] .zs-outline h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 6px 0 10px;
+}
+body[data-zhiyun] .zs-outline button {
+  font-size: 11px;
+  margin-right: 15px;
+}
+body[data-zhiyun] .zs-block {
+  scroll-margin: 25px;
+  border-bottom: 1px solid var(--zy-line);
+  padding: 20px 0;
+}
+body[data-zhiyun] .zs-block header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: var(--zy-muted);
+}
+body[data-zhiyun] .zs-block h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+body[data-zhiyun] .zs-block p {
+  font-size: 13px;
+  line-height: 1.95;
+  margin: 8px 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+body[data-zhiyun] .zs-facet {
+  font-size: 10px;
+  padding: 2px 5px;
+  background: var(--zy-soft);
+  color: var(--zy-accent);
+  border-radius: 3px;
+  margin-left: 4px;
+}
+body[data-zhiyun] .zs-block p.zs-bridge {
+  color: var(--zy-secondary);
+  padding-left: 12px;
+  border-left: 2px solid var(--zy-line);
+  font-size: 12px;
+}
+body[data-zhiyun] .zs-diagnostics {
+  margin: 24px 0;
+  font-size: 11px;
+  color: var(--zy-muted);
+}
+body[data-zhiyun] .zs-diagnostics summary,
+body[data-zhiyun] .zs-models summary {
+  cursor: pointer;
+}
+body[data-zhiyun] .zs-models {
+  margin-top: 24px;
+  padding-top: 15px;
+  border-top: 1px solid var(--zy-line);
+  font-size: 11px;
+}
+body[data-zhiyun] .zs-models p {
+  color: var(--zy-secondary);
+  line-height: 1.8;
+}
+body[data-zhiyun] .zs-models label {
+  margin: 12px 0;
+}
+body[data-zhiyun] .zs-models select {
+  max-width: 100%;
+  width: 100%;
+  font-size: 11px;
+}
+body[data-zhiyun] .zs-slide-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11px;
+  margin-bottom: 16px;
+}
+body[data-zhiyun] .zs-slide {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--zy-line);
+  border-radius: 4px;
+}
+body[data-zhiyun] .zs-transcript p {
+  display: flex;
+  gap: 18px;
+  padding: 9px 0;
+  margin: 0;
+  border-bottom: 1px solid var(--zy-line);
+  line-height: 1.85;
+}
+body[data-zhiyun] .zs-transcript time {
+  font-size: 10px;
+  color: var(--zy-muted);
+  padding-top: 3px;
+  flex: none;
+}
+body[data-zhiyun] .zs-transcript span {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+body[data-zhiyun] .zs-study select {
+  max-width: 100%;
+}
+/* Study is a page in the product shell: it owns one wide, persistent workspace,
+   with the course tree and the selected lesson sharing the same reading flow. */
+body[data-zhiyun] .zy-page[data-page=study] .zy-content { max-width:none; width:100%; padding:28px 34px 34px; }
+body[data-zhiyun] .zs-study { width:100%; color:var(--zy-text); }
+body[data-zhiyun] .zs-workbench-shell { width:100%; }
+body[data-zhiyun] .zs-workbench { display:grid; grid-template-columns:minmax(246px, 286px) minmax(0,1fr); gap:34px; align-items:start; }
+body[data-zhiyun] .zs-course-tree { position:sticky; top:0; display:flex; flex-direction:column; min-width:0; max-height:calc(100vh - 132px); padding:2px 0 0; }
+body[data-zhiyun] .zs-tree-top { display:flex; align-items:center; justify-content:space-between; padding:0 10px 16px; }
+body[data-zhiyun] .zs-eyebrow { display:block; color:var(--zy-muted); font-size:10px; letter-spacing:.08em; }
+body[data-zhiyun] .zs-tree-top h2 { margin:3px 0 0; font-size:16px; font-weight:600; }
+body[data-zhiyun] .zs-course-total { min-width:25px; height:25px; display:grid; place-items:center; border-radius:7px; background:var(--zy-soft); color:var(--zy-accent); font-size:11px; }
+body[data-zhiyun] .zs-tree-search { display:flex; align-items:center; gap:9px; height:36px; margin:0 0 12px; padding:0 10px; border:1px solid var(--zy-line); border-radius:7px; background:var(--zy-surface); color:var(--zy-muted); }
+body[data-zhiyun] .zs-tree-search>span { font-size:19px; line-height:1; }
+body[data-zhiyun] .zs-tree-search input { width:100%; min-width:0; border:0; outline:0; background:transparent; color:var(--zy-text); font:inherit; font-size:11px; }
+body[data-zhiyun] .zs-course-list { flex:1; min-height:0; overflow:auto; padding-right:4px; }
+body[data-zhiyun] .zs-course-group { margin-bottom:3px; }
+body[data-zhiyun] .zs-course-toggle { display:flex; align-items:center; width:100%; min-height:49px; gap:9px; padding:6px 9px; border:0; border-radius:7px; background:transparent; color:var(--zy-text); text-align:left; cursor:pointer; }
+body[data-zhiyun] .zs-course-toggle:hover { background:var(--zy-hover); }
+body[data-zhiyun] .zs-chevron { width:14px; flex:none; color:var(--zy-muted); font-size:17px; text-align:center; }
+body[data-zhiyun] .zs-course-name { display:flex; flex-direction:column; min-width:0; flex:1; gap:2px; }
+body[data-zhiyun] .zs-course-name strong { overflow:hidden; color:var(--zy-text); font-size:11px; font-weight:600; text-overflow:ellipsis; white-space:nowrap; }
+body[data-zhiyun] .zs-course-name small,.zs-course-count { color:var(--zy-muted); font-size:9px; }
+body[data-zhiyun] .zs-course-count { flex:none; }
+body[data-zhiyun] .zs-course-group.is-open > .zs-course-toggle { background:color-mix(in srgb,var(--zy-soft) 46%,transparent); }
+body[data-zhiyun] .zs-tree-lessons { margin:2px 0 7px 13px; padding-left:9px; border-left:1px solid var(--zy-line); }
+body[data-zhiyun] .zs-tree-lesson { display:flex; align-items:center; width:100%; min-height:47px; gap:8px; padding:6px 7px; border:0; border-radius:6px; background:transparent; color:var(--zy-text); text-align:left; cursor:pointer; }
+body[data-zhiyun] .zs-tree-lesson:hover { background:var(--zy-hover); }
+body[data-zhiyun] .zs-tree-lesson.is-selected { background:var(--zy-soft); color:var(--zy-accent); }
+body[data-zhiyun] .zs-state-dot { width:6px; height:6px; flex:none; border-radius:50%; background:var(--zy-muted); }
+body[data-zhiyun] .zs-state-dot.is-ready { background:#44856a; }
+body[data-zhiyun] .zs-state-dot.is-running { background:#bd8745; animation:zs-pulse 1s infinite alternate; }
+@keyframes zs-pulse { to { opacity:.35; } }
+body[data-zhiyun] .zs-tree-lesson-copy { display:flex; flex-direction:column; min-width:0; flex:1; gap:2px; }
+body[data-zhiyun] .zs-tree-lesson-copy strong { overflow:hidden; font-size:10px; font-weight:500; text-overflow:ellipsis; white-space:nowrap; }
+body[data-zhiyun] .zs-tree-lesson-copy small,.zs-state-label { color:var(--zy-muted); font-size:9px; white-space:nowrap; }
+body[data-zhiyun] .zs-state-label { flex:none; }
+body[data-zhiyun] .zs-tree-hint { padding:7px 9px; color:var(--zy-muted); font-size:10px; }
+body[data-zhiyun] .zs-tree-empty { margin:10px 8px; padding:12px 10px; border:1px dashed var(--zy-line); border-radius:7px; color:var(--zy-muted); font-size:10px; }
+body[data-zhiyun] .zs-tree-empty p { margin:0; }
+body[data-zhiyun] .zs-tree-empty .zs-text { margin-top:7px; font-size:10px; }
+body[data-zhiyun] .zs-tree-footer { flex:none; margin-top:10px; padding:10px 8px 0; border-top:1px solid var(--zy-line); color:var(--zy-muted); font-size:9px; }
+body[data-zhiyun] .zs-models { margin-top:7px; padding-top:0; border:0; }
+body[data-zhiyun] .zs-models > summary { padding:5px 0; color:var(--zy-secondary); }
+body[data-zhiyun] .zs-models > p { font-size:10px; }
+body[data-zhiyun] .zs-reader { min-width:0; padding:0 0 30px; }
+body[data-zhiyun] .zs-reader-empty { min-height:min(680px,calc(100vh - 190px)); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:42px; text-align:center; }
+body[data-zhiyun] .zs-motto-text { color:var(--zy-accent); font-family:"Songti SC","SimSun",serif; font-size:20px; letter-spacing:.12em; }
+body[data-zhiyun] .zs-reader-empty h1 { max-width:560px; margin:17px 0 8px; font-size:21px; font-weight:500; letter-spacing:-.02em; }
+body[data-zhiyun] .zs-reader-empty > p { max-width:510px; margin:0; color:var(--zy-secondary); font-size:11px; line-height:1.9; }
+body[data-zhiyun] .zs-empty-hint { display:flex; align-items:center; gap:11px; margin-top:34px; padding:16px 20px; border-top:1px solid var(--zy-line); border-bottom:1px solid var(--zy-line); text-align:left; }
+body[data-zhiyun] .zs-empty-hint > span { color:var(--zy-accent); font-size:10px; }
+body[data-zhiyun] .zs-empty-hint > div { display:flex; flex-direction:column; gap:3px; padding-right:20px; }
+body[data-zhiyun] .zs-empty-hint strong { font-size:10px; font-weight:500; }
+body[data-zhiyun] .zs-empty-hint small { color:var(--zy-muted); font-size:9px; }
+body[data-zhiyun] .zs-current-section { padding:4px 0 19px; border-bottom:1px solid var(--zy-line); }
+body[data-zhiyun] .zs-breadcrumb { display:flex; align-items:center; gap:8px; overflow:hidden; color:var(--zy-muted); font-size:10px; white-space:nowrap; }
+body[data-zhiyun] .zs-breadcrumb span:last-child { overflow:hidden; color:var(--zy-secondary); text-overflow:ellipsis; }
+body[data-zhiyun] .zs-current-main { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-top:15px; }
+body[data-zhiyun] .zs-current-main h1 { margin:6px 0 3px; font-size:23px; font-weight:600; letter-spacing:-.025em; line-height:1.35; }
+body[data-zhiyun] .zs-current-main p { margin:0; color:var(--zy-secondary); font-size:10px; }
+body[data-zhiyun] .zs-current-state { display:inline-flex; align-items:center; gap:6px; color:var(--zy-secondary); font-size:10px; }
+body[data-zhiyun] .zs-current-state i { width:6px; height:6px; border-radius:50%; background:#b88a4a; }
+body[data-zhiyun] .zs-current-state.is-ready i { background:#44856a; }
+body[data-zhiyun] .zs-current-actions { display:flex; align-items:center; gap:8px; flex:none; }
+body[data-zhiyun] .zs-progress { margin-top:12px; padding:9px 11px; border-radius:6px; background:var(--zy-soft); font-size:10px; }
+body[data-zhiyun] .zs-assets { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; padding:18px 0 24px; }
+body[data-zhiyun] .zs-asset-card { position:relative; display:flex; align-items:center; min-width:0; min-height:87px; gap:12px; padding:14px; border:1px solid var(--zy-line); border-radius:8px; background:var(--zy-surface); color:var(--zy-text); text-align:left; cursor:pointer; transition:border-color .15s,background .15s,transform .15s; }
+body[data-zhiyun] .zs-asset-card:hover { border-color:color-mix(in srgb,var(--zy-accent) 42%,var(--zy-line)); transform:translateY(-1px); }
+body[data-zhiyun] .zs-asset-card.is-active { border-color:color-mix(in srgb,var(--zy-accent) 38%,var(--zy-line)); background:color-mix(in srgb,var(--zy-soft) 45%,var(--zy-surface)); }
+body[data-zhiyun] .zs-asset-icon { display:grid; width:34px; height:34px; flex:none; place-items:center; border-radius:8px; background:var(--zy-soft); color:var(--zy-accent); font-size:17px; }
+body[data-zhiyun] .zs-asset-copy { display:flex; flex-direction:column; min-width:0; gap:3px; }
+body[data-zhiyun] .zs-asset-copy small { color:var(--zy-secondary); font-size:9px; }
+body[data-zhiyun] .zs-asset-copy strong { overflow:hidden; font-size:12px; font-weight:600; text-overflow:ellipsis; white-space:nowrap; }
+body[data-zhiyun] .zs-asset-copy > span { overflow:hidden; color:var(--zy-muted); font-size:9px; text-overflow:ellipsis; white-space:nowrap; }
+body[data-zhiyun] .zs-asset-arrow { position:absolute; top:10px; right:11px; color:var(--zy-muted); font-size:10px; }
+body[data-zhiyun] .zs-content-section { min-width:0; }
+body[data-zhiyun] .zs-content-heading { display:flex; align-items:end; justify-content:space-between; gap:16px; padding:4px 0 10px; border-bottom:1px solid var(--zy-line); }
+body[data-zhiyun] .zs-content-heading h2 { margin:3px 0 0; font-size:15px; font-weight:600; }
+body[data-zhiyun] .zs-content-tools { display:flex; align-items:center; gap:12px; }
+body[data-zhiyun] .zs-content-switch { display:flex; align-items:center; gap:4px; padding:3px; border-radius:7px; background:color-mix(in srgb,var(--zy-sidebar) 65%,var(--zy-bg)); }
+body[data-zhiyun] .zs-content-switch button { padding:5px 10px; border:0; border-radius:5px; background:transparent; color:var(--zy-secondary); font:inherit; font-size:10px; cursor:pointer; }
+body[data-zhiyun] .zs-content-switch button[aria-selected=true] { background:var(--zy-surface); color:var(--zy-accent); box-shadow:0 1px 3px #00000012; }
+/* 下面这几条自带 `font-size` 的控件规则必须比 :58 的宿主重置（`body[data-zhiyun] .zs-study button`
+   的 `font: inherit`，特异性 0-2-2）更高：多写一层 `.zs-study` 就够了，否则声明会被 inherit 顶掉，
+   界面上量到的就是继承来的 13px。 */
+body[data-zhiyun] .zs-study .zs-icon-button { display:grid; width:29px; height:29px; place-items:center; border:1px solid var(--zy-line); border-radius:6px; background:var(--zy-surface); color:var(--zy-secondary); font-size:17px; cursor:pointer; }
+body[data-zhiyun] .zs-outline { display:flex; justify-content:space-between; gap:20px; margin:20px 0 15px; padding:3px 0 3px 13px; border-left-width:2px; }
+body[data-zhiyun] .zs-outline h3 { margin:5px 0 0; font-size:14px; }
+body[data-zhiyun] .zs-outline-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:4px 12px; }
+body[data-zhiyun] .zs-outline-links .zs-text { font-size:10px; }
+body[data-zhiyun] .zs-outline-links .zs-text span { margin-left:5px; color:var(--zy-muted); }
+body[data-zhiyun] .zs-slide-controls { margin-top:17px; }
+body[data-zhiyun] .zs-slide-controls > span { font-size:11px; }
+body[data-zhiyun] .zs-slide-controls > div { display:flex; gap:7px; }
+body[data-zhiyun] .zs-slide { max-height:calc(100vh - 320px); object-fit:contain; background:var(--zy-surface); }
+body[data-zhiyun] .zs-slide-time { color:var(--zy-muted); font-size:10px; }
+body[data-zhiyun] .zs-transcript { max-height:calc(100vh - 270px); overflow:auto; margin-top:8px; }
+body[data-zhiyun] .zs-transcript p { gap:20px; padding:12px 8px; font-size:11px; }
+body[data-zhiyun] .zs-transcript time { min-width:40px; color:var(--zy-accent); }
+body[data-zhiyun] .zs-content-empty,.zs-unparsed { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:250px; padding:30px; text-align:center; }
+body[data-zhiyun] .zs-content-empty > span,.zs-unparsed-icon { display:grid; width:38px; height:38px; place-items:center; margin-bottom:11px; border-radius:10px; background:var(--zy-soft); color:var(--zy-accent); font-size:18px; }
+body[data-zhiyun] .zs-content-empty strong,.zs-unparsed h3 { margin:0; font-size:13px; font-weight:500; }
+body[data-zhiyun] .zs-content-empty small,.zs-unparsed p { max-width:400px; margin:6px 0 0; color:var(--zy-muted); font-size:10px; line-height:1.8; }
+body[data-zhiyun] .zs-unparsed { min-height:290px; }
+body[data-zhiyun] .zs-unparsed-icon { font-size:16px; }
+body[data-zhiyun] .zs-unparsed .zs-text { margin-top:15px; font-size:11px; }
+body[data-zhiyun] .zs-diagnostics { padding:12px 0; border-top:1px solid var(--zy-line); }
+body[data-zhiyun] .zs-content-loading,.zs-workspace-loading { display:flex; align-items:center; justify-content:center; gap:10px; min-height:180px; color:var(--zy-secondary); font-size:11px; }
+body[data-zhiyun] .zs-spinner { width:15px; height:15px; border:2px solid var(--zy-line); border-top-color:var(--zy-accent); border-radius:50%; animation:zs-spin .8s linear infinite; }
+@keyframes zs-spin { to { transform:rotate(360deg); } }
+body[data-zhiyun] .zs-workspace-signin { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:60vh; text-align:center; }
+body[data-zhiyun] .zs-signin-mark { display:grid; width:48px; height:48px; place-items:center; border:2px solid var(--zy-accent); border-radius:13px; color:var(--zy-accent); font-size:21px; font-weight:700; }
+body[data-zhiyun] .zs-workspace-signin h1 { margin:16px 0 4px; font-size:20px; font-weight:600; }
+body[data-zhiyun] .zs-workspace-signin p { margin:0 0 17px; color:var(--zy-secondary); font-size:11px; }
+body[data-zhiyun] .zs-mobile-tree-toggle { display:none; }
+/* 这两块原本住在 ui-primitives 的 <style> 里，但它们的基规则在本包（上方的 .zs-workbench
+   与 .zs-models 两处），而两张表同特异性、按挂载顺序决胜：primitives 的 inject 为空、最先挂，
+   页面包等 zhiyunStudyController 才挂、排在后 —— 留在那边就必输，覆盖永远不生效
+   （曾真实回归：≤760 时 .zs-heading 还是 24px/26px 而非 18px/23px）。
+   跟着基规则搬到本包后，位置与原 dsh-zhiyun-study/style.css 一致：在下面 980/720 两块之前。 */
+@media (max-width: 1050px) {
+  body[data-zhiyun] .zs-workbench {
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 760px) {
+  body[data-zhiyun] .zs-workbench {
+    grid-template-columns: 1fr;
+  }
+  body[data-zhiyun] .zs-models {
+    margin-top: 15px;
+  }
+  /* 与上面同理：.zs-progress 的基规则在本包（:27 起），覆盖也跟过来。 */
+  body[data-zhiyun] .zs-progress {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 980px) {
+  body[data-zhiyun] .zy-page[data-page=study] .zy-content { padding:20px 22px 28px; }
+  body[data-zhiyun] .zs-workbench { grid-template-columns:minmax(210px,240px) minmax(0,1fr); gap:22px; }
+  body[data-zhiyun] .zs-assets { gap:8px; }
+  body[data-zhiyun] .zs-asset-card { gap:8px; padding:11px 9px; }
+  body[data-zhiyun] .zs-asset-icon { width:30px; height:30px; }
+}
+@media (max-width: 720px) {
+  body[data-zhiyun] .zy-page[data-page=study] .zy-content { padding:12px 15px 24px; }
+  body[data-zhiyun] .zs-mobile-tree-toggle { display:flex; align-items:center; justify-content:space-between; width:100%; min-height:40px; margin-bottom:12px; padding:0 10px; border:1px solid var(--zy-line); border-radius:7px; background:var(--zy-surface); color:var(--zy-text); font:inherit; font-size:11px; }
+  body[data-zhiyun] .zs-mobile-tree-toggle span:nth-child(2) { overflow:hidden; margin-left:auto; margin-right:9px; color:var(--zy-secondary); text-overflow:ellipsis; white-space:nowrap; }
+  body[data-zhiyun] .zs-workbench { display:flex; flex-direction:column; gap:12px; }
+  body[data-zhiyun] .zs-course-tree { display:none; position:static; width:100%; max-height:45vh; padding:9px; border:1px solid var(--zy-line); border-radius:8px; background:var(--zy-surface); }
+  body[data-zhiyun] .zs-workbench.is-tree-open .zs-course-tree { display:flex; }
+  body[data-zhiyun] .zs-tree-top { padding-bottom:9px; }
+  body[data-zhiyun] .zs-reader { width:100%; }
+  body[data-zhiyun] .zs-current-main { align-items:flex-start; flex-direction:column; gap:12px; }
+  body[data-zhiyun] .zs-current-main h1 { font-size:19px; }
+  body[data-zhiyun] .zs-assets { grid-template-columns:1fr; gap:7px; padding:13px 0 18px; }
+  body[data-zhiyun] .zs-asset-card { min-height:62px; }
+  body[data-zhiyun] .zs-content-heading { align-items:flex-start; flex-direction:column; }
+  body[data-zhiyun] .zs-content-tools { width:100%; justify-content:space-between; }
+  body[data-zhiyun] .zs-outline { flex-direction:column; gap:11px; }
+  body[data-zhiyun] .zs-outline-links { justify-content:flex-start; }
+  body[data-zhiyun] .zs-empty-hint { flex-wrap:wrap; justify-content:center; }
+}
+body[data-zhiyun] .zs-layer-note { display:flex; flex-wrap:wrap; gap:10px; color:var(--zy-muted); font-size:13px; line-height:1.8; margin:0 0 18px; }
+body[data-zhiyun] .zs-handout { max-width:980px; margin:0 auto; }
+body[data-zhiyun] .zs-handout-toolbar { display:flex; gap:18px; align-items:center; justify-content:space-between; padding:6px 0 22px; border-bottom:1px solid var(--zy-line); }
+body[data-zhiyun] .zs-handout-toolbar strong { display:block; font-size:14px; font-weight:600; }
+body[data-zhiyun] .zs-handout-toolbar small { display:block; margin-top:7px; color:var(--zy-muted); font-size:12px; }
+body[data-zhiyun] .zs-handout-actions { display:flex; flex-wrap:wrap; gap:8px; flex-shrink:0; }
+body[data-zhiyun] .zs-handout-toc-toggle { display:flex; align-items:center; justify-content:space-between; width:100%; border:1px solid var(--zy-line); border-radius:10px; background:var(--zy-surface); color:var(--zy-text); padding:11px 14px; font-size:13px; cursor:pointer; text-align:left; }
+body[data-zhiyun] .zs-handout-toc-toggle span { color:var(--zy-muted); font-size:12px; }
+body[data-zhiyun] .zs-handout-drawer { margin:8px 0 18px; padding:14px 16px; border:1px solid var(--zy-line); border-radius:12px; background:var(--zy-surface-muted, #f7f9fc); box-shadow:0 8px 24px rgba(30,55,90,.08); }
+body[data-zhiyun] .zs-handout-drawer-title { color:var(--zy-muted); font-size:12px; margin-bottom:8px; }
+body[data-zhiyun] .zs-handout-drawer { max-height:52vh; overflow:auto; background:var(--zy-surface); }
+body[data-zhiyun] .zs-handout-tree-branch > summary, body[data-zhiyun] .zs-handout-tree-leaf > summary { display:flex; align-items:center; cursor:pointer; }
+body[data-zhiyun] .zs-handout-tree-branch > summary::before, body[data-zhiyun] .zs-handout-tree-leaf > summary::before { content:'▸'; font-size:11px; color:var(--zy-muted); }
+body[data-zhiyun] .zs-handout-tree-branch[open] > summary::before, body[data-zhiyun] .zs-handout-tree-leaf[open] > summary::before { content:'▾'; }
+body[data-zhiyun] .zs-handout-tree-leaf { margin-left:16px; }
+body[data-zhiyun] .zs-handout-tree-block { display:block; width:calc(100% - 30px); text-align:left; margin-left:30px; padding:6px 10px; border:0; border-left:1px solid var(--zy-line); background:transparent; color:var(--zy-muted); font-size:12px; cursor:pointer; }
+body[data-zhiyun] .zs-handout-drawer button.is-active { color:var(--zy-accent); background:var(--zy-hover); }
+body[data-zhiyun] [data-handout-location] { scroll-margin-top:28px; }
+body[data-zhiyun] .zs-block-source { margin-left:auto; white-space:nowrap; font-size:11px; }
+body[data-zhiyun] .zs-example-label { color:var(--zy-secondary); font-size:12px; }
+body[data-zhiyun] .zs-example-solution { margin-top:16px; border-top:1px solid var(--zy-line); padding-top:10px; }
+body[data-zhiyun] .zs-example-solution > summary { cursor:pointer; color:var(--zy-accent); font-size:13px; }
+body[data-zhiyun] .zs-handout-tree-chapter, body[data-zhiyun] .zs-handout-tree-topic { display:block; width:100%; border:0; background:transparent; cursor:pointer; text-align:left; color:var(--zy-text); padding:7px 8px; border-radius:6px; }
+body[data-zhiyun] .zs-handout-tree-chapter { font-weight:650; }
+body[data-zhiyun] .zs-handout-tree-topic { padding-left:28px; color:var(--zy-muted); font-size:13px; }
+body[data-zhiyun] .zs-handout-tree-chapter:hover, body[data-zhiyun] .zs-handout-tree-topic:hover { background:var(--zy-hover, #eaf1fb); color:var(--zy-accent); }
+body[data-zhiyun] .zs-handout-chapter { padding:26px 0 12px; scroll-margin-top:24px; }
+body[data-zhiyun] .zs-handout-chapter > header { border-bottom:1px solid var(--zy-line); padding-bottom:20px; margin-bottom:24px; }
+body[data-zhiyun] .zs-handout-chapter > header small { color:var(--zy-muted); font-size:12px; letter-spacing:.12em; }
+body[data-zhiyun] .zs-handout-chapter > header h2 { font-size:24px; line-height:1.5; margin:8px 0 0; }
+body[data-zhiyun] .zs-handout-topic { padding:8px 0 30px; }
+body[data-zhiyun] .zs-handout-topic > header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:18px; }
+body[data-zhiyun] .zs-handout-topic h3 { font-size:19px; line-height:1.6; margin:0; font-weight:650; }
+body[data-zhiyun] .zs-source-anchor { font-size:12px; white-space:nowrap; }
+body[data-zhiyun] .zs-handout-block { font-size:15px; line-height:1.95; margin:16px 0; overflow-wrap:anywhere; }
+body[data-zhiyun] .zs-handout-block { border-left:3px solid var(--zy-line); padding:13px 18px; border-radius:0 9px 9px 0; background:var(--zy-surface); }
+body[data-zhiyun] .zs-handout-kind { display:flex; align-items:center; gap:9px; margin:0 0 8px; font-size:13px; }
+body[data-zhiyun] .zs-handout-kind span { display:inline-flex; padding:2px 8px; border-radius:99px; background:rgba(70,110,160,.12); color:var(--zy-accent); font-weight:650; }
+body[data-zhiyun] .zs-handout-kind strong { color:var(--zy-muted); font-weight:550; }
+body[data-zhiyun] .zs-handout-block .katex-display { overflow-x:auto; overflow-y:hidden; padding:8px 0; }
+body[data-zhiyun] .zs-draft-label { font-size:12px; color:var(--zy-muted); border-left:2px solid var(--zy-line); padding-left:12px; }
+body[data-zhiyun] .zs-filter-panel { margin:0 0 14px; padding:13px 15px; border:1px solid var(--zy-line); border-radius:9px; background:var(--zy-surface); }
+body[data-zhiyun] .zs-filter-row { display:flex; align-items:flex-start; gap:11px; margin:0 0 8px; }
+body[data-zhiyun] .zs-filter-label { flex:0 0 52px; padding-top:4px; color:var(--zy-muted); font-size:10px; letter-spacing:.04em; }
+body[data-zhiyun] .zs-chips { display:flex; flex-wrap:wrap; gap:5px; min-width:0; }
+body[data-zhiyun] .zs-study .zs-chip { display:inline-flex; align-items:center; gap:4px; padding:3px 9px; border:1px solid var(--zy-line); border-radius:99px; background:transparent; color:var(--zy-secondary); font:inherit; font-size:10px; line-height:1.6; cursor:pointer; }
+body[data-zhiyun] .zs-chip-count { color:var(--zy-muted); font-size:9px; font-variant-numeric:tabular-nums; }
+body[data-zhiyun] .zs-chip.is-on .zs-chip-count { color:inherit; opacity:.75; }
+body[data-zhiyun] .zs-chip:disabled { cursor:default; }
+body[data-zhiyun] .zs-chip.is-idle { border-style:dotted; color:var(--zy-muted); opacity:.55; }
+body[data-zhiyun] .zs-chip.is-idle:hover { border-color:var(--zy-line); color:var(--zy-muted); }
+body[data-zhiyun] .zs-chip.is-idle.is-on { border-color:transparent; background:transparent; color:var(--zy-muted); font-weight:400; opacity:.55; }
+body[data-zhiyun] .zs-chip:hover { border-color:color-mix(in srgb,var(--zy-accent) 40%,var(--zy-line)); color:var(--zy-accent); }
+body[data-zhiyun] .zs-chip.is-on { border-color:transparent; background:var(--zy-soft); color:var(--zy-accent); font-weight:600; }
+body[data-zhiyun] .zs-chip.is-off { border-style:dashed; color:var(--zy-muted); cursor:default; opacity:.72; }
+body[data-zhiyun] .zs-chip.is-off:hover { border-color:var(--zy-line); color:var(--zy-muted); }
+body[data-zhiyun] .zs-filter-hint { margin:2px 0 11px 63px; color:var(--zy-muted); font-size:10px; line-height:1.7; }
+body[data-zhiyun] .zs-filter-panel > .zs-text { margin:0 0 8px 63px; font-size:11px; }
+body[data-zhiyun] .zs-results { margin:0 0 14px; padding:13px 15px; border:1px solid var(--zy-line); border-radius:9px; background:var(--zy-bg); }
+body[data-zhiyun] .zs-results-head { margin:0; font-size:11px; font-weight:600; }
+body[data-zhiyun] .zs-results-note { margin:5px 0 0; color:var(--zy-muted); font-size:10px; line-height:1.75; }
+body[data-zhiyun] .zs-hit-list { display:flex; flex-direction:column; gap:1px; margin-top:11px; }
+body[data-zhiyun] .zs-hit { display:block; width:100%; padding:9px 10px; border:0; border-radius:6px; background:transparent; color:var(--zy-text); font:inherit; text-align:left; cursor:pointer; }
+body[data-zhiyun] .zs-hit:hover { background:var(--zy-hover); }
+body[data-zhiyun] .zs-hit-top { display:flex; align-items:center; gap:8px; margin-bottom:4px; }
+body[data-zhiyun] .zs-hit-layer { pointer-events:none; }
+body[data-zhiyun] .zs-hit-where { color:var(--zy-muted); font-size:10px; }
+body[data-zhiyun] .zs-hit-text { display:block; font-size:11px; line-height:1.8; color:var(--zy-secondary); overflow-wrap:anywhere; }
+body[data-zhiyun] .zs-hit:hover .zs-hit-text { color:var(--zy-text); }
+body[data-zhiyun][data-ds-dark-theme] .zs-filter-panel { background:color-mix(in srgb,var(--zy-surface) 80%,var(--zy-bg)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-results { background:color-mix(in srgb,var(--zy-bg) 70%,var(--zy-surface)); }
+body[data-zhiyun] .zs-breadcrumb-row { display:flex; align-items:center; justify-content:space-between; gap:12px; min-width:0; }
+body[data-zhiyun] .zs-breadcrumb { min-width:0; }
+body[data-zhiyun] .zs-search-entry { position:relative; display:flex; flex:0 0 auto; align-items:center; gap:8px; min-width:0; }
+body[data-zhiyun] .zs-search-box { display:flex; align-items:center; gap:6px; width:252px; max-width:44vw; min-width:0; padding:0 9px; border:1px solid var(--zy-line); border-radius:6px; background:var(--zy-surface); color:var(--zy-muted); font-size:10px; transition:border-color .15s; }
+body[data-zhiyun] .zs-search-box:focus-within { border-color:color-mix(in srgb,var(--zy-accent) 45%,var(--zy-line)); }
+body[data-zhiyun] .zs-search-box input { flex:1 1 auto; width:100%; min-width:0; min-height:28px; padding:0; border:0; background:transparent; color:var(--zy-text); font-size:11px; }
+body[data-zhiyun] .zs-search-box input:focus-visible { outline:none; }
+body[data-zhiyun] .zs-search-box input::placeholder { color:var(--zy-muted); }
+body[data-zhiyun] .zs-search-clear { flex:0 0 auto; padding:2px 3px; border:0; background:transparent; color:var(--zy-muted); font-size:13px; line-height:1; cursor:pointer; }
+body[data-zhiyun] .zs-search-clear:hover { color:var(--zy-text); }
+body[data-zhiyun] .zs-study .zs-search-trigger { flex:0 0 auto; padding:6px 11px; border:1px solid var(--zy-line); border-radius:6px; background:var(--zy-surface); color:var(--zy-secondary); font:inherit; font-size:10px; white-space:nowrap; cursor:pointer; transition:background .15s,color .15s,border-color .15s; }
+body[data-zhiyun] .zs-search-trigger:hover { border-color:color-mix(in srgb,var(--zy-accent) 40%,var(--zy-line)); color:var(--zy-accent); }
+body[data-zhiyun] .zs-search-trigger[aria-expanded="true"] { border-color:transparent; background:var(--zy-soft); color:var(--zy-accent); font-weight:600; }
+body[data-zhiyun] .zs-advanced-popover { position:absolute; top:calc(100% + 8px); right:0; z-index:30; width:min(560px,78vw); max-height:min(70vh,520px); overflow:auto; padding:14px 16px; border:1px solid var(--zy-line); border-radius:10px; background:var(--zy-surface); box-shadow:0 18px 40px -18px rgba(15,23,42,.35); }
+body[data-zhiyun] .zs-advanced-popover .zs-filter-panel { margin:0; padding:0; border:0; background:transparent; }
+body[data-zhiyun] .zs-search-drawer { margin:13px 0 0; padding:14px 16px; border:1px solid var(--zy-line); border-radius:10px; background:var(--zy-surface); }
+body[data-zhiyun] .zs-search-drawer .zs-results { margin:0; padding:0; border:0; background:transparent; }
+body[data-zhiyun] .zs-search-drawer .zs-chips { row-gap:6px; }
+body[data-zhiyun][data-ds-dark-theme] .zs-search-box,
+body[data-zhiyun][data-ds-dark-theme] .zs-search-trigger { background:color-mix(in srgb,var(--zy-surface) 80%,var(--zy-bg)); }
+body[data-zhiyun][data-ds-dark-theme] .zs-advanced-popover { background:color-mix(in srgb,var(--zy-surface) 80%,var(--zy-bg)); box-shadow:0 18px 40px -18px rgba(0,0,0,.6); }
+@media(max-width:1050px) { body[data-zhiyun] .zs-search-box { width:190px; max-width:38vw; } }
+@media(max-width:850px) { body[data-zhiyun] .zs-handout-toolbar { align-items:flex-start; flex-direction:column; } body[data-zhiyun] .zs-content-switch { flex-wrap:wrap; } body[data-zhiyun] .zs-breadcrumb-row { flex-wrap:wrap; } body[data-zhiyun] .zs-search-entry { flex:1 1 100%; } body[data-zhiyun] .zs-search-box { width:auto; max-width:none; flex:1 1 auto; } body[data-zhiyun] .zs-advanced-popover { width:auto; left:0; right:0; } }

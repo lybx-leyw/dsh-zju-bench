@@ -1,0 +1,19 @@
+{
+  "name": "dsh-zhiyun-notes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "智云 Pro 节笔记：Markdown 笔记 + zy://section / zy-asset 内链解析（零 UI、零落盘，持久化由集成层注入 store）",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./note": "./src/note.js",
+    "./store": "./src/store.js",
+    "./errors": "./src/errors.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "dsh-zhiyun-knowledge": "0.1.0"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

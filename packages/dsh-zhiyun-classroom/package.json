@@ -1,0 +1,13 @@
+{
+  "name": "dsh-zhiyun-classroom",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "智云课堂独立数据源与 Cordis 服务",
+  "main": "./src/index.js",
+  "exports": { ".": "./src/index.js", "./source": "./src/source.js", "./package.json": "./package.json" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "dependencies": { "tough-cookie": "6.0.2" },
+  "peerDependencies": { "@deepseek-ai/dsh-atomic-write": "0.2.0-rc.2" },
+  "peerDependenciesMeta": { "@deepseek-ai/dsh-atomic-write": { "optional": true } }
+}

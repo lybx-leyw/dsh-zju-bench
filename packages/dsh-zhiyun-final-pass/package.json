@@ -1,0 +1,14 @@
+{
+  "name": "dsh-zhiyun-final-pass",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "无曰终审：把一节讲义交给 DSH 原生 agent 自由整理（复用宿主 agent 运行时，不自己发 LLM 请求）",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./prompts": "./src/prompts.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}

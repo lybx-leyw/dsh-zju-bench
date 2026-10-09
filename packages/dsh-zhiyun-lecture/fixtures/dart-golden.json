@@ -1,0 +1,3786 @@
+{
+ "_source": "lib/fusion/lecture_tree.dart + lecture_register.dart @ zhiyun-pro（由 Dart 3.13.1 实际运行导出）",
+ "_how": "node .runtime/parity/golden.mjs —— 差分 harness 的冻结快照",
+ "tree": [
+  {
+   "name": "基础：三标题八页",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "没有块（本次课没讲到）",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 0,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [],
+        "isCovered": false,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [],
+        "isCovered": false,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [],
+        "isCovered": false,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件上有 3 个知识点的页，本次课没讲到（树里保留着，讲义只列讲过的那些）",
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 0,
+    "blockCount": 0,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "没有页",
+   "slides": [],
+   "blocks": [],
+   "outline": [],
+   "expected": {
+    "chapters": [],
+    "warnings": [],
+    "uncoveredBlocks": [],
+    "topicCount": 0,
+    "coveredTopicCount": 0,
+    "blockCount": 0,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "整节梳理分段",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [
+    {
+     "title": "第一章",
+     "from": 1,
+     "to": 3
+    },
+    {
+     "title": "第二章",
+     "from": 4,
+     "to": 8
+    }
+   ],
+   "expected": {
+    "chapters": [
+     {
+      "title": "第一章",
+      "blockCount": 3,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     },
+     {
+      "title": "第二章",
+      "blockCount": 5,
+      "topics": [
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "分段跨过概念边界",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [
+    {
+     "title": "前一章",
+     "from": 1,
+     "to": 1
+    },
+    {
+     "title": "后一章",
+     "from": 2,
+     "to": 8
+    }
+   ],
+   "expected": {
+    "chapters": [
+     {
+      "title": "后一章",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉",
+     "有 1 个概念的口述跨过了分段边界，概念保持完整"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "块页号越界（孤儿块）",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    },
+    {
+     "index": 99,
+     "page": 500
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 9,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8,
+         99
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "有 1 个主线块的页号不在课件页范围里，已按页序附到最接近的知识点",
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 9,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "不相邻同名页不归并",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 2,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 3,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Alpha",
+        "fromPage": 5,
+        "toPage": 6,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5,
+         6
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 7,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "课件分节页定章",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\n第1章 检索\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\n第1章 检索\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\n第1章 检索\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\n第2章 排序\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "第1章 检索",
+      "blockCount": 5,
+      "topics": [
+       {
+        "title": "第1章 检索",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Alpha",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     },
+     {
+      "title": "第2章 排序",
+      "blockCount": 3,
+      "topics": [
+       {
+        "title": "第2章 排序",
+        "fromPage": 6,
+        "toPage": 6,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 7,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "课件有、本次课没讲到的标题保留在树里",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nNeverTaught\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nNeverTaught\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 6,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "NeverTaught",
+        "fromPage": 6,
+        "toPage": 7,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [],
+        "isCovered": false,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 8,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件上有 1 个知识点的页，本次课没讲到（树里保留着，讲义只列讲过的那些）",
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 3,
+    "blockCount": 6,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "截图页不产出标题",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "**窗口标题栏**：Pre安排.xlsx - Excel  登录\n菜单栏：文件 开始 插入\n剪贴板：粘贴\n字体：等线 12"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "",
+        "fromPage": 4,
+        "toPage": 4,
+        "pptLines": [],
+        "blockIndexes": [
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": true
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "有 1 页是教师切到别的软件时的界面截图（Excel 排期表 / 浏览器 / 关机画面等），这些页没有 PPT 标题，其讲解内容仍按无名知识点收录",
+     "课件形态：有页眉",
+     "第 4–4 页没有可用的 PPT 标题（图上没有文字，或全是界面外壳），这些块的知识点没有名字"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "截图页自成一段",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "窗口标题栏：Pre安排.xlsx - Excel\n剪贴板：粘贴"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "",
+        "fromPage": 4,
+        "toPage": 4,
+        "pptLines": [],
+        "blockIndexes": [
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": true
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "有 1 页是教师切到别的软件时的界面截图（Excel 排期表 / 浏览器 / 关机画面等），这些页没有 PPT 标题，其讲解内容仍按无名知识点收录",
+     "课件形态：有页眉",
+     "第 4–4 页没有可用的 PPT 标题（图上没有文字，或全是界面外壳），这些块的知识点没有名字"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：| Doc | Text |",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\n| Doc | Text |\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "| Doc | Text |",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：左侧表格：",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\n左侧表格：\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "左侧表格：",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：Returns relevant docum",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nReturns relevant documents but\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "Returns relevant documents but",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：while ( read a documen",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nwhile ( read a document D ) {\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "while ( read a document D ) {",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：Index Generator",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nIndex Generator\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Index Generator",
+        "fromPage": 4,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：☞ Solution 3: Compact ",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\n☞ Solution 3: Compact Version\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Solution 3: Compact Version",
+        "fromPage": 4,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "标题判据：标题：☞ Solution 3: Compa",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\n标题：☞ Solution 3: Compact Version\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Solution 3: Compact Version",
+        "fromPage": 4,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 4,
+    "coveredTopicCount": 4,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "封面页兜底：半句话不许当标题",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Returns relevant documents but\n这是第一页正文里的另外一行，用来让它不是唯一行。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nTopic 2\n这是第 2 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nTopic 3\n这是第 3 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nTopic 4\n这是第 4 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nTopic 5\n这是第 5 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nTopic 6\n这是第 6 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nTopic 7\n这是第 7 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nTopic 8\n这是第 8 页的正文内容行，长度足够长以模拟真实幻灯片。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "",
+        "fromPage": 1,
+        "toPage": 8,
+        "pptLines": [
+         "Returns relevant documents but",
+         "这是第一页正文里的另外一行，用来让它不是唯一行。",
+         "Topic 2",
+         "这是第 2 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 3",
+         "这是第 3 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 4",
+         "这是第 4 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 5",
+         "这是第 5 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 6",
+         "这是第 6 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 7",
+         "这是第 7 页的正文内容行，长度足够长以模拟真实幻灯片。",
+         "Topic 8",
+         "这是第 8 页的正文内容行，长度足够长以模拟真实幻灯片。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉",
+     "第 1–8 页没有可用的 PPT 标题（图上没有文字，或全是界面外壳），这些块的知识点没有名字"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 1,
+    "coveredTopicCount": 1,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "封面页兜底：认出真封面标题",
+   "slides": [
+    {
+     "page": 1,
+     "text": ""
+    },
+    {
+     "page": 2,
+     "text": "高级数据结构与算法分析\nAdvanced Data Structures and\nAlgorithm Analysis\n主讲教师： 卜佳俊\n助教： 郑卓男"
+    },
+    {
+     "page": 3,
+     "text": "13:22\n2026/9/15"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 3,
+      "topics": [
+       {
+        "title": "",
+        "fromPage": 1,
+        "toPage": 1,
+        "pptLines": [],
+        "blockIndexes": [
+         1
+        ],
+        "isCovered": true,
+        "titleOnly": true
+       },
+       {
+        "title": "高级数据结构与算法分析",
+        "fromPage": 2,
+        "toPage": 3,
+        "pptLines": [
+         "Advanced Data Structures and",
+         "Algorithm Analysis",
+         "主讲教师： 卜佳俊",
+         "助教： 郑卓男"
+        ],
+        "blockIndexes": [
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "这份课件里没有识别出页眉（每页顶部没有重复的那一行），无法按「有没有页眉」判课件页，已退回逐行过滤 —— 抽出的标题可能混入教师切到别的软件时的界面文字",
+     "有 1 页是教师切到别的软件时的界面截图（Excel 排期表 / 浏览器 / 关机画面等），这些页没有 PPT 标题，其讲解内容仍按无名知识点收录",
+     "课件形态：无页眉",
+     "第 1–1 页没有可用的 PPT 标题（图上没有文字，或全是界面外壳），这些块的知识点没有名字"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 2,
+    "coveredTopicCount": 2,
+    "blockCount": 3,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "整份课件没有标题",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "",
+        "fromPage": 1,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉",
+     "第 1–8 页没有可用的 PPT 标题（图上没有文字，或全是界面外壳），这些块的知识点没有名字"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 1,
+    "coveredTopicCount": 1,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "样板课件没有页眉（页级判据退回逐行过滤）",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Topic A\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Topic A\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Topic A\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Topic B\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Topic B\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Topic B\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Topic C\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Topic C\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Topic A",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Topic B",
+        "fromPage": 4,
+        "toPage": 6,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5,
+         6
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Topic C",
+        "fromPage": 7,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "这份课件里没有识别出页眉（每页顶部没有重复的那一行），无法按「有没有页眉」判课件页，已退回逐行过滤 —— 抽出的标题可能混入教师切到别的软件时的界面文字",
+     "课件形态：无页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "续表并进上一段",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\n| Doc | Text |\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "| Doc | Text |",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "整页没有可用文字",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "（无）"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nBeta\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Beta",
+        "fromPage": 5,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "有 1 页是教师切到别的软件时的界面截图（Excel 排期表 / 浏览器 / 关机画面等），这些页没有 PPT 标题，其讲解内容仍按无名知识点收录",
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "71 字长标题跨页重复",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nAlpha\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nDistributed indexing (for web-scale indexing — don't try this at home!)\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nDistributed indexing (for web-scale indexing — don't try this at home!)\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "Alpha",
+        "fromPage": 1,
+        "toPage": 3,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Distributed indexing (for web-scale indexing — don't try this at home!)",
+        "fromPage": 4,
+        "toPage": 5,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         4,
+         5
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 6,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 3,
+    "coveredTopicCount": 3,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  },
+  {
+   "name": "省略号两种写法归并",
+   "slides": [
+    {
+     "page": 1,
+     "text": "Inverted File Index\nWhile accessing a term ......\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 2,
+     "text": "Inverted File Index\nWhile accessing a term ......\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 3,
+     "text": "Inverted File Index\nWhile accessing a term ……\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 4,
+     "text": "Inverted File Index\nWhile accessing a term ……\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 5,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 6,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 7,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    },
+    {
+     "page": 8,
+     "text": "Inverted File Index\nGamma\n这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+    }
+   ],
+   "blocks": [
+    {
+     "index": 1,
+     "page": 1
+    },
+    {
+     "index": 2,
+     "page": 2
+    },
+    {
+     "index": 3,
+     "page": 3
+    },
+    {
+     "index": 4,
+     "page": 4
+    },
+    {
+     "index": 5,
+     "page": 5
+    },
+    {
+     "index": 6,
+     "page": 6
+    },
+    {
+     "index": 7,
+     "page": 7
+    },
+    {
+     "index": 8,
+     "page": 8
+    }
+   ],
+   "outline": [],
+   "expected": {
+    "chapters": [
+     {
+      "title": "",
+      "blockCount": 8,
+      "topics": [
+       {
+        "title": "While accessing a term ……",
+        "fromPage": 1,
+        "toPage": 4,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         1,
+         2,
+         3,
+         4
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       },
+       {
+        "title": "Gamma",
+        "fromPage": 5,
+        "toPage": 8,
+        "pptLines": [
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。",
+         "这是一段足够长的正文，用来模拟 PPT 上真正的讲解内容行，长度超过三十个字符。"
+        ],
+        "blockIndexes": [
+         5,
+         6,
+         7,
+         8
+        ],
+        "isCovered": true,
+        "titleOnly": false
+       }
+      ]
+     }
+    ],
+    "warnings": [
+     "课件形态：有页眉"
+    ],
+    "uncoveredBlocks": [],
+    "topicCount": 2,
+    "coveredTopicCount": 2,
+    "blockCount": 8,
+    "register": null,
+    "clean": {}
+   }
+  }
+ ],
+ "register": [
+  {
+   "source": "原话。",
+   "rewritten": "  ",
+   "expected": {
+    "register": "failed",
+    "notes": [
+     "加工结果是空的"
+    ]
+   }
+  },
+  {
+   "source": "内存充足时采用随机寻址。",
+   "rewritten": "内存充足时采用随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "与口述相同"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "同学们，内存采用随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「同学们」"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址的",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "呃，内存足够就随机寻址。",
+   "rewritten": "内存充足时采用随机寻址。",
+   "expected": {
+    "register": "written",
+    "notes": []
+   }
+  },
+  {
+   "source": "内存充足时采用随机寻址",
+   "rewritten": "内存充足时，采用随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "与口述相同"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "内存采用同学们随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「同学们」"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "内存采用各位同学随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「各位同学」"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "内存采用我们来看随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「我们来看」"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "内存采用大家看随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「大家看」"
+    ]
+   }
+  },
+  {
+   "source": "看这里。",
+   "rewritten": "内存采用听懂了吗随机寻址。",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "含课堂称呼「听懂了吗」"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址了",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址的",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址啊",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址呢",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址吧",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址吗",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址呃",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址呀",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址哇",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址，",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址、",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "原话。",
+   "rewritten": "内存采用随机寻址：",
+   "expected": {
+    "register": "draft",
+    "notes": [
+     "有说半截的句子"
+    ]
+   }
+  },
+  {
+   "source": "",
+   "rewritten": "内容",
+   "expected": {
+    "register": "written",
+    "notes": []
+   }
+  },
+  {
+   "source": "内容",
+   "rewritten": "",
+   "expected": {
+    "register": "failed",
+    "notes": [
+     "加工结果是空的"
+    ]
+   }
+  }
+ ],
+ "clean": {
+  "12": "",
+  "**_Relevance_ measurement requires 3 elements:**": "Relevance measurement requires 3 elements:",
+  "标题：☞ Solution 2: Compact Version": "Solution 2: Compact Version",
+  "1. 有序前缀": "有序前缀",
+  "【Example】 Stack with MultiPop(…).": "【Example】 Stack with MultiPop(……).",
+  "右上角页眉：AVL Trees": "AVL Trees",
+  "页眉（右上角，蓝色）：AVL Trees, Splay Trees": "AVL Trees, Splay Trees",
+  "标题栏（带立体边框的灰色横幅，黑色粗体字）：Adelson-Velskii-Landis (AVL) Trees (1962)": "Adelson-Velskii-Landis (AVL) Trees (1962)",
+  "标题行：【Example】　Input the months": "【Example】 Input the months",
+  "共享内存的读写与并发控制策略，以及工具链上的取舍说明": "共享内存的读写与并发控制策略，以及工具链上的取舍说明",
+  "共享": "",
+  "13:22": "",
+  "2026/9/15": "",
+  "```": "",
+  "|---|---|": "",
+  "$k_1$": "",
+  "$A$": "",
+  "$$\\Phi(T)=\\sum$$": "",
+  "【Definition】 The balance factor $BF(node) = …": "【Definition】 The balance factor $BF(node) = ……",
+  "根节点椭圆内文字：Mar": "",
+  "蓝色粗箭头（向右）": "",
+  "旋转指示：蓝色粗箭头（向右）": "",
+  "（无）": "",
+  "（这一页无可见文字）": "",
+  "页面置换算法": "页面置换算法",
+  "Discussion 4:": "Discussion 4:",
+  "\\le 5": "\\le 5",
+  "$x$\\le": "$x$\\le",
+  "\\mathrm": "\\mathrm",
+  "[a-zA-Z]": "",
+  "[Example]": "[Example]",
+  "[abc": "[abc",
+  "☞ Solution 3: Compact Version": "Solution 3: Compact Version",
+  "✂ 剪下来的": "剪下来的",
+  "· 项目符号": "项目符号"
+ }
+}

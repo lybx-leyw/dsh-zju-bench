@@ -1,0 +1,12 @@
+# Product composition belongs to this bundle. Removing it restores the host sidebar.
+#
+# 只停用宿主的左侧栏（本产品自带侧栏替换它）。
+# 右侧栏**不能停用**：宿主的文档/文件/终端分页等 9 个客户端插件都注入 `sidebarRight`
+# 服务，停用它会让整个前端启动失败（“web boot: 9 entries did not activate”）。
+# 因此历史会话抽屉不占用右侧轨道，而是放在问一问输入区内的抽屉面板里
+# （见 components.jsx 的 SessionDrawer）。
+- id: ui-sidebar
+  disabled: true
+- insert:
+    - id: zhiyun-shell
+      name: dsh-zhiyun-shell

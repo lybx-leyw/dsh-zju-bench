@@ -1,0 +1,29 @@
+{
+  "name": "zhiyun-bench-profile",
+  "version": "0.1.0",
+  "private": true,
+  "description": "智云 Pro 的独立 DSH 工作台配置",
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-zhiyun-shell",
+        "dsh-zhiyun-ui-primitives",
+        "dsh-zhiyun-classroom",
+        "dsh-zhiyun-parser",
+        "dsh-zhiyun-study-core",
+        "dsh-zhiyun-lecture",
+        "dsh-zhiyun-final-pass",
+        "dsh-zhiyun-quiz",
+        "dsh-zhiyun-notes",
+        "dsh-zhiyun-knowledge",
+        "dsh-zhiyun-page-today",
+        "dsh-zhiyun-page-courses",
+        "dsh-zhiyun-page-study",
+        "dsh-zhiyun-page-me"
+      ],
+      "patchReload": "live"
+    }
+  }
+}
