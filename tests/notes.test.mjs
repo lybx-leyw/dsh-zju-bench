@@ -59,8 +59,14 @@ import { NoteError } from '../packages/dsh-zhiyun-notes/src/errors.js';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const PACKAGE_DIR = path.join(HERE, '..', 'packages', 'dsh-zhiyun-notes');
-/** 会话 cwd 是另一个 Flutter 仓库，所以这里一律绝对路径，不吃 cwd。 */
-const FLUTTER_DART = 'C:\\Users\\19389\\Desktop\\zhiyun-pro\\lib\\data\\section_note_store.dart';
+/**
+ * 与 Flutter 仓库的对照是可选增强：默认取与本仓库同级的 `zhiyun-pro`，
+ * 也可用 `ZHIYUN_FLUTTER_ROOT` 指向其它位置；找不到时该用例自行跳过。
+ */
+const FLUTTER_ROOT = process.env.ZHIYUN_FLUTTER_ROOT
+  ? path.resolve(process.env.ZHIYUN_FLUTTER_ROOT)
+  : path.resolve(HERE, '..', '..', 'zhiyun-pro');
+const FLUTTER_DART = path.join(FLUTTER_ROOT, 'lib', 'data', 'section_note_store.dart');
 
 const readJson = (name) => JSON.parse(readFileSync(path.join(PACKAGE_DIR, 'fixtures', name), 'utf8'));
 const DART = readJson('dart-golden-pure.json');
