@@ -1,6 +1,6 @@
 // 分层检索 —— App `knowledge_store.dart` 的 `search()` 在 JS 侧的对应实现。
 //
-// 语义逐条对齐 `C:\Users\19389\Desktop\zhiyun-pro\lib\data\knowledge_store.dart`：
+// 语义逐条对齐 App 侧的 `lib/data/knowledge_store.dart`：
 //   ① 档位（`QueryMode`）决定「候选字段集」，不是相关度算法；
 //   ② **先筛后扫**：2×11 维（role + facets）先把块收窄，再在子集里扫关键词；
 //   ③ **筛了维度就只有块层能出结果** —— 页面层、整节主线、术语表都没有块级标签，
