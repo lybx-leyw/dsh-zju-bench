@@ -4,19 +4,32 @@
 
 本文件只讲两件每次工作都必须遵守的事：**开工前的检查**与**文件归属**。
 
+## 共享仓库
+
+本项目的共享仓库是唯一的一个，地址固定为：
+
+```text
+https://github.com/lybx-leyw/dsh-zju-bench
+```
+
+它的 `origin` 必须正好是上面这个地址。所有提交最终都只推到这里，不推其他任何仓库。
+
 ## 每次开始工作前
 
 依次执行下面的命令，并把结果简要汇报给用户：
 
 ```bash
-git status            # 是否有未提交的改动
+git status                    # 是否有未提交的改动
 git branch --show-current
-git remote -v         # 确认 origin 指向你实际要推送的仓库
+git remote get-url origin     # 输出必须是 https://github.com/lybx-leyw/dsh-zju-bench
 git fetch origin
-git config user.name  # 确认当前用户是谁，用于下文的“文件归属”检查
+git config user.name          # 确认当前用户是谁，用于下文的“文件归属”检查
 ```
 
-- 如果当前目录还不是 Git 仓库，或 `origin` 不是预期的那一个（没有配置、指向别的项目，或你并不清楚该推到哪），**先停下来向用户说明，让用户确认远端地址**，再协助其 `git clone` 或 `git remote add origin ...`。不要凭空假设远端地址，**也不要在错误的目录里初始化新仓库**。
+- `git remote get-url origin` 的输出**必须与上节地址逐字符一致**；不一致（`origin` 不存在、指向 fork、指向别的项目、用 SSH 别名或跳转链接写法、或其他任何地址）一律视为错误配置。
+- 遇到上述错误配置，**停下来向用户说明差异，由用户决定是否修改远端**，不要默默继续，也不要凭自己的判断“纠正”成其他地址。
+- 如果当前目录还不是 Git 仓库，先向用户说明，再协助其 `git clone https://github.com/lybx-leyw/dsh-zju-bench`。**不要在错误的目录里初始化新仓库。**
+- 需要添加或修正远端时，用完整地址：`git remote add origin https://github.com/lybx-leyw/dsh-zju-bench`，或 `git remote set-url origin https://github.com/lybx-leyw/dsh-zju-bench`。
 - 如果有未提交的改动，先弄清这些改动是不是用户想要的，再决定提交、暂存（`git stash`）还是保留。**不要丢弃用户的改动。**
 
 `git config user.name` 的结果就是后文里的“当前用户”。归属判断依据是这个值，而不是发起请求的账号 —— 两者可能不一致。
